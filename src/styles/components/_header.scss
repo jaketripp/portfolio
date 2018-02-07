@@ -1,0 +1,18 @@
+.header {
+  background: $main;
+}
+
+.header__content {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  padding: $s-size 0;
+}
+
+.header__title {
+  color: white;
+  text-decoration: none;
+  h1, h3 {
+    margin: 0;
+  }
+}
