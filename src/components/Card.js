@@ -14,10 +14,10 @@ export const Card = (props) => {
     };
     return (
         <div className="card" style={cardStyle}>
-            <img src={props.data.logo} alt={`${props.data.title} logo`} class="image" />
-                <div class="overlay" style={overlayStyle}>
+            <img src={props.data.logo} alt={`${props.data.title} logo`} className="image" />
+                <div className="overlay" style={overlayStyle}>
                     <h3>{props.data.title}</h3>
-                    <div class="text">
+                    <div className="text">
                         <Link className="card__links__button" style={linksStyle} to={props.data.demoURL}>Demo</Link>
                         <Link className="card__links__button" style={linksStyle} to={props.data.githubURL}>GitHub</Link>
                         <Link className="card__links__button" style={linksStyle} to={`/apps/info/${props.data.infoURLName}`}>More Info</Link>
