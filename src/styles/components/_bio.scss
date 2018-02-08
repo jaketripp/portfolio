@@ -1,0 +1,18 @@
+.bio {
+    padding: 30px 0;
+}
+
+.bio__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    > * {
+        flex: 1 1 50%;
+        width: 50%;
+    }
+}
+
+.bio__image img {
+    width: 100%;
+}
