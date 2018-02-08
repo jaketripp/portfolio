@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #184860;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            color: white;
+            font-size: 20px;
+            font-family: 'Helvetica Neue';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .text h3 {
+            font-size: 36px;
+            margin: 0 0 10px;
+        }
+
+        .text button {
+            background: none;
+            color: white;
+            border: 2px solid white;
+            margin: 8px auto;
+            width: 100%;
+            font-size: 20px;
+            padding: 8px 20px;
+            border-radius: 41px;
+        }
+
+        .text button:hover {
+            background: white;
+            color: #184860;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Fade in Overlay</h2>
+
+    <div class="container">
+        <img src="http://jaketripp.com/images/asoftoday.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+            <div class="text">
+                <h3>As of Today</h3>
+                <button>Demo</button>
+                <button>GitHub</button>
+                <button>More Info</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
