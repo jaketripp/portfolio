@@ -8,19 +8,15 @@ export const Card = (props) => {
     const overlayStyle = {
         backgroundColor: props.data.backgroundColor
     };
-    const linksStyle = {
-        border: `2px solid ${props.data.color}`,
-
-    };
     return (
         <div className="card" style={cardStyle}>
             <img src={props.data.logo} alt={`${props.data.title} logo`} className="image" />
                 <div className="overlay" style={overlayStyle}>
                     <h3>{props.data.title}</h3>
                     <div className="text">
-                        <Link className="card__links__button" style={linksStyle} to={props.data.demoURL}>Demo</Link>
-                        <Link className="card__links__button" style={linksStyle} to={props.data.githubURL}>GitHub</Link>
-                        <Link className="card__links__button" style={linksStyle} to={`/apps/info/${props.data.infoURLName}`}>More Info</Link>
+                        <Link className="card__links__button" to={props.data.demoURL}>Demo</Link>
+                        <Link className="card__links__button" to={props.data.githubURL}>GitHub</Link>
+                        <Link className="card__links__button" to={`/apps/info/${props.data.infoURLName}`}>More Info</Link>
                     </div>
                 </div>
         </div>
