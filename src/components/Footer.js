@@ -6,15 +6,15 @@ const GitHubLogo = require('react-icons/lib/fa/github');
 
 const Footer = () => (
     <div className="footer">
-        <div className="footer-content">
-            <div className="icons">
+        <div className="footer__content">
+            <div className="footer__icons">
                 
                 <a href="https://github.com/jaketripp"><GitHubLogo /></a>
                 <a href="https://www.linkedin.com/in/jake-tripp/"><LinkedInLogo /></a>
                 <a href="https://medium.com/@jaketripp"><OldMediumLogo /></a>
                 <a href="https://www.facebook.com/jaketripp95"><FacebookLogo /></a>
             </div>
-            <div className="copyright">
+            <div className="footer_copyright">
                 <p>Jake Tripp &copy; 2018</p>
             </div>
         </div>
