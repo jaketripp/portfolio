@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        .container {
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .card {
             position: relative;
-            width: 50%;
+            width: 400px;
+            max-width: 100%;
         }
 
         .image {
@@ -26,9 +31,13 @@
             opacity: 0;
             transition: .5s ease;
             background-color: #184860;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .container:hover .overlay {
+        .card:hover .overlay {
             opacity: 1;
         }
 
@@ -36,17 +45,14 @@
             color: white;
             font-size: 20px;
             font-family: 'Helvetica Neue';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
             text-align: center;
             display: flex;
             flex-direction: column;
         }
 
-        .text h3 {
+        h3 {
+            color: white;
+            font-family: 'Helvetica Neue';            
             font-size: 36px;
             margin: 0 0 10px;
         }
@@ -74,11 +80,11 @@
 
     <h2>Fade in Overlay</h2>
 
-    <div class="container">
-        <img src="http://jaketripp.com/images/asoftoday.jpg" alt="Avatar" class="image">
+    <div class="card">
+        <img src="http://jaketripp.com/images/asoftoday.jpg" alt="insert cool logo name" class="image">
         <div class="overlay">
+            <h3>As of Today</h3>
             <div class="text">
-                <h3>As of Today</h3>
                 <button>Demo</button>
                 <button>GitHub</button>
                 <button>More Info</button>
