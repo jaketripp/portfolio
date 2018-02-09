@@ -5,7 +5,7 @@ import Footer from './Footer';
 import Header from './Header';
 import NotFoundPage from './NotFoundPage';
 
-const projectNames = ['asoftoday', 'color-conversion', 'expensify'];
+const projectNames = ['asoftoday', 'seasonal', 'expensify'];
 
 const AppInfo = (props) => {
     const appName = props.match.params.name;
