@@ -4,7 +4,7 @@ const projectList = [
         color: '#ffffff',
         title: 'As of Today',
         logo: 'http://jaketripp.com/images/asoftoday.jpg',
-        demoURL: 'http://asoftoday.com', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
     },
@@ -22,7 +22,7 @@ const projectList = [
         color: '#ffffff',
         title: 'As of Today',
         logo: 'http://jaketripp.com/images/asoftoday.jpg',
-        demoURL: 'http://asoftoday.com', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
     },
@@ -40,7 +40,7 @@ const projectList = [
         color: '#ffffff',
         title: 'As of Today',
         logo: 'http://jaketripp.com/images/asoftoday.jpg',
-        demoURL: 'http://asoftoday.com', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
     },
@@ -58,7 +58,7 @@ const projectList = [
         color: '#ffffff',
         title: 'As of Today',
         logo: 'http://jaketripp.com/images/asoftoday.jpg',
-        demoURL: 'http://asoftoday.com', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
     },
@@ -76,7 +76,7 @@ const projectList = [
         color: '#ffffff',
         title: 'As of Today',
         logo: 'http://jaketripp.com/images/asoftoday.jpg',
-        demoURL: 'http://asoftoday.com', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
     },
@@ -94,7 +94,7 @@ const projectList = [
         color: '#ffffff',
         title: 'As of Today',
         logo: 'http://jaketripp.com/images/asoftoday.jpg',
-        demoURL: 'http://asoftoday.com', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
     }
