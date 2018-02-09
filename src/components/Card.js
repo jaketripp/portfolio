@@ -36,8 +36,8 @@ class Card extends Component {
                 <div className="overlay" style={overlayStyle}>
                     <h3>{this.state.data.title}</h3>
                     <div className="text">
-                        <RadiumLink className="card__links__button" style={btnStyle} to={this.state.data.demoURL}>Demo</RadiumLink>
-                        <RadiumLink className="card__links__button" style={btnStyle} to={this.state.data.githubURL}>GitHub</RadiumLink>
+                        <a className="card__links__button" style={btnStyle} key={this.state.data.demoURL} href={this.state.data.demoURL}>Demo</a>
+                        <a className="card__links__button" style={btnStyle} key={this.state.data.githubURL} href={this.state.data.githubURL}>GitHub</a>
                         <RadiumLink className="card__links__button" style={btnStyle} to={`/apps/info/${this.state.data.infoURLName}`}>More Info</RadiumLink>
                     </div>
                 </div>
