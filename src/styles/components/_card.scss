@@ -46,19 +46,15 @@
     display: flex;
     flex-direction: column;
     a.card__links__button {
-        background: none;
         margin: 8px auto;
         width: 100%;
         font-size: 20px;
         padding: 4px 20px;
         border-radius: 41px;
         text-decoration: none;
-        color: white;
         border: 2px solid;
         &:hover {
-            background: white;
-            color: #184860;
-            transition: 0.3s ease;
+            transition: .3s ease;
         }
     }
 }
