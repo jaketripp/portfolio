@@ -18,6 +18,15 @@ const projectList = [
         githubURL: 'https://github.com/jaketripp/Seasonal',
     },
     {
+        title: 'Music Master',
+        color: '#ffffff',
+        backgroundColor: '#2c5b61',
+        logo: '/images/music-master.jpg',
+        demoURL: 'https://jaketripp-music-master.herokuapp.com/',
+        infoURLName: 'musicmaster',
+        githubURL: 'https://github.com/jaketripp/music-master',
+    },
+    {
         title: 'SA Coding Challenge',
         color: '#ffffff',
         backgroundColor: '#181818',
@@ -25,6 +34,35 @@ const projectList = [
         demoURL: 'http://sacodingchallenge.com',
         infoURLName: 'sacc',
         githubURL: 'https://github.com/sacodingchallenge/sacodingchallenge',
+    },
+    {
+        title: 'Expensify',
+        color: '#ffffff',
+        backgroundColor: '#1890c0',
+        logo: '/images/expensify.jpg',
+        demoURL: 'https://jaketripp-expensify.herokuapp.com/',
+        infoURLName: 'expensify',
+        githubURL: 'https://github.com/jaketripp/expensify',
+    },
+    {
+        title: 'Chat',
+        color: '#ffffff',
+        backgroundColor: '#78a8d8',
+        logo: '/images/chat.jpg',
+        // include this on page
+        // <a href="https://www.freepik.com/free-vector/chat-speech-bubble-icon_761194.htm">Designed by Freepik</a>
+        demoURL: 'http://jaketripp-chat-app.herokuapp.com/',
+        infoURLName: 'chat',
+        githubURL: 'https://github.com/jaketripp/node-chat-app',
+    },
+    {
+        title: 'YelpCamp',
+        color: '#ffffff',
+        backgroundColor: '#304848',
+        logo: '/images/yelpcamp.jpg',
+        demoURL: 'https://jaketripp-yelp-camp.herokuapp.com/',
+        infoURLName: 'yelpcamp',
+        githubURL: 'https://github.com/jaketripp/yelpcamp',
     },
     {
         title: 'Hair by Francisco',
@@ -59,6 +97,7 @@ const projectList = [
         backgroundColor: '#FFF000',
         logo: '/images/color.jpg',
         demoURL: 'https://jaketripp.github.io/Color-Conversion/',
+        infoURLName: 'colorconversion',
         githubURL: 'https://github.com/jaketripp/Color-Conversion/',
     },
     {
@@ -67,6 +106,7 @@ const projectList = [
         backgroundColor: '#F0F000',
         logo: '/images/simon.png',
         demoURL: 'https://jaketripp.github.io/simon/',
+        infoURLName: 'simon',
         githubURL: 'https://github.com/jaketripp/simon/',
     },
     {
@@ -75,6 +115,7 @@ const projectList = [
         backgroundColor: '#476D36',
         logo: '/images/pomodoro.jpg',
         demoURL: 'https://jaketripp.github.io/pomodoro/',
+        infoURLName: 'pomodoro',
         githubURL: 'https://github.com/jaketripp/pomodoro/',
     },
     {
@@ -83,6 +124,7 @@ const projectList = [
         backgroundColor: '#1890d8',
         logo: '/images/calculator.png',
         demoURL: 'https://jaketripp.github.io/calculator/',
+        infoURLName: 'calculator',
         githubURL: 'https://github.com/jaketripp/calculator/',
     },
     {
@@ -91,6 +133,7 @@ const projectList = [
         backgroundColor: '#00A717',
         logo: '/images/tictactoe.png',
         demoURL: 'https://jaketripp.github.io/tictactoe/',
+        infoURLName: 'tictactoe',
         githubURL: 'https://github.com/jaketripp/tictactoe/',
     },
     {
@@ -99,17 +142,9 @@ const projectList = [
         backgroundColor: '#f07818',
         logo: '/images/wikiviewer.png',
         demoURL: 'https://jaketripp.github.io/wikiviewer/',
+        infoURLName: 'wikiviewer',
         githubURL: 'https://github.com/jaketripp/wikiviewer/',
-    },
-    // {
-    //     title: 'Wiki Viewer',
-    //     color: '#ffffff',
-    //     backgroundColor: '#304860',
-    //     logo: '/images/wikiviewer.png',
-    //     demoURL: 'https://jaketripp.github.io/wikiviewer/',
-    //     githubURL: 'https://github.com/jaketripp/wikiviewer/',
-    // },
-    
+    }
 ]; 
 
 module.exports = {projectList};
