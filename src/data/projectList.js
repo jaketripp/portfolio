@@ -110,13 +110,13 @@ const projectList = [
         githubURL: 'https://github.com/jaketripp/simon/',
     },
     {
-        title: 'Pomodoro Clock',
+        title: 'Countdown Champ',
         color: '#ffffff',
         backgroundColor: '#476D36',
-        logo: '/images/pomodoro.jpg',
-        demoURL: 'https://jaketripp.github.io/pomodoro/',
-        infoURLName: 'pomodoro',
-        githubURL: 'https://github.com/jaketripp/pomodoro/',
+        logo: '/images/clock.jpg',
+        demoURL: 'https://jaketripp-countdown-champ.herokuapp.com/',
+        infoURLName: 'countdownchamp',
+        githubURL: 'https://github.com/jaketripp/countdown-champ',
     },
     {
         title: 'Calculator',
