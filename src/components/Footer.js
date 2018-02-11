@@ -14,7 +14,7 @@ const Footer = () => (
                 <a href="https://medium.com/@jaketripp"><OldMediumLogo /></a>
                 <a href="https://www.facebook.com/jaketripp95"><FacebookLogo /></a>
             </div>
-            <div className="footer_copyright">
+            <div className="footer__copyright">
                 <p>Jake Tripp &copy; 2018</p>
             </div>
         </div>
