@@ -1,15 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Card from './Card';
-import { projectList } from '../data/projectList';
+import { apps } from '../data/apps';
 
 export const CardList = () => {
     return (
         <div className="card-list">
             {
-                projectList.map((project, i) => {
+                Object.keys(apps).map((project, i) => {
                     return (
-                        <Card key={i} data={project} />
+                        <Card key={i} data={apps[project]} />
                     );
                 })
             }
