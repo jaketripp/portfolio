@@ -13,20 +13,20 @@ class Card extends Component {
 
     render() {
         const cardStyle = {
-            color: this.state.data.color
+            color: this.state.data.style.color
         }
         const overlayStyle = {
-            background: this.state.data.backgroundColor
+            background: this.state.data.style.backgroundColor
         }
 
         const btnStyle = {
-            background: this.state.data.backgroundColor,
-            color: this.state.data.color,
-            border: `2px solid ${this.state.data.color}`,
+            background: this.state.data.style.backgroundColor,
+            color: this.state.data.style.color,
+            border: `2px solid ${this.state.data.style.color}`,
 
             ':hover': {
-                background: this.state.data.color,
-                color: this.state.data.backgroundColor
+                background: this.state.data.style.color,
+                color: this.state.data.style.backgroundColor
             },
         };
 
@@ -38,7 +38,7 @@ class Card extends Component {
                     <div className="text">
                         <a className="card__links__button" style={btnStyle} key={this.state.data.demoURL} href={this.state.data.demoURL}>Demo</a>
                         <a className="card__links__button" style={btnStyle} key={this.state.data.githubURL} href={this.state.data.githubURL}>GitHub</a>
-                        <RadiumLink className="card__links__button" style={btnStyle} to={`/apps/info/${this.state.data.infoURLName}`}>More Info</RadiumLink>
+                        <RadiumLink className="card__links__button" style={btnStyle} to={`/about/${this.state.data.infoURLName}`}>More Info</RadiumLink>
                     </div>
                 </div>
             </div>
