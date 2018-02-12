@@ -61,23 +61,25 @@
         text-align: center;
         line-height: 1.0;
     }
+    .text {
+        font-size: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
-.text {
+
+
+a.card__links__button {
+    margin: 8px auto;
+    width: 100%;
     font-size: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    a.card__links__button {
-        margin: 8px auto;
-        width: 100%;
-        font-size: 20px;
-        padding: 4px 20px;
-        border-radius: 41px;
-        text-decoration: none;
-        &:hover {
-            transition: .3s ease;
-        }
+    padding: 4px 20px;
+    border-radius: 41px;
+    text-decoration: none;
+    &:hover {
+        transition: .3s ease;
     }
 }
 
