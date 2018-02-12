@@ -2,19 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Footer from './Footer';
+import AppInfo from './AppInfo';
 import Header from './Header';
 import NotFoundPage from './NotFoundPage';
+import { apps } from '../data/apps';
 
-const projectNames = ['asoftoday', 'seasonal', 'expensify'];
-
-const AppInfo = (props) => {
+const AppInfoPage = (props) => {
     const appName = props.match.params.name;
-    if (projectNames.includes(appName)) {
+    if (!!apps[appName]) {
         return (
             <div>
                 <Header />
-                This is the App Info page
-                <Link to="/">Go home</Link>
+                <AppInfo app={apps[appName]}/>
                 <Footer />
             </div>
         );
@@ -25,4 +24,4 @@ const AppInfo = (props) => {
     }
 }
 
-export default AppInfo;
+export default AppInfoPage;
