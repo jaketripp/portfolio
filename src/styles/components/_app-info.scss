@@ -1,0 +1,19 @@
+.app-info {
+    min-height: 75vh;
+    padding: 20px 0;
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .screenshot {
+        flex: 1 1 500px;
+        img {
+            width: 100%;
+        }
+    }
+    .text {
+        flex: 1 1 400px;
+    }
+}
