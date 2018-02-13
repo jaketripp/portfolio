@@ -42,9 +42,13 @@
             margin-right: 15px;
         }
     }
+    #tech-p {
+        margin-bottom: 0;
+    }
     .app-info__tech {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
 }
