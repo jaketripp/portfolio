@@ -43,12 +43,12 @@ const apps = {
         demoURL: 'http://hairbyfrancisco.com',
         infoURLName: 'hairbyfrancisco',
         githubURL: 'https://github.com/jaketripp/hairByFrancisco/',
-        techList: [],
-        screenshot: '',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        techList: ['html-5', 'css-3', 'javascript', 'jquery', 'semantic-ui'],
+        screenshot: '/images/screenshots/hairbyfrancisco.jpg',
+        description: "Francisco Mejia is a passionate, local hairstylist. Clients of Francisco love his creative vision, his ability to give people the perfect haircut/style/color, his attention to detail, and his friendly personality.",
+        why: "Francisco is my barber and his website didn't show off his skills very well. I also wanted to add real work to my résumé.",
+        coolFeature: "I wanted people to really get a sense of Francisco's work and skills, so I knew I would need a lot of pictures. However, with all of those pictures the page started loading really slow. I opted for a cool solution: progressive loading. Basically, load in extremely tiny sized versions of the pictures and have a blur effect, and as the user scrolls, dynamically load in the real image and remove the blur effect. Quick to load and an enjoyable experience.",
+        date: 'October 2017'
     },
     'asoftoday': {
         title: 'As of Today',
