@@ -9,12 +9,12 @@ const apps = {
         demoURL: 'https://jaketripp-music-master.herokuapp.com/',
         infoURLName: 'musicmaster',
         githubURL: 'https://github.com/jaketripp/music-master',
-        techList: ['react', 'node', 'express', 'es6', 'webpack', 'babel', 'sass', 'bootstrap', 'oauth'],
-        screenshot: '/images/screenshots/music-master-screenshot.png',
+        techList: ['react', 'node', 'webpack', 'express', 'es6', 'oauth', 'babel', 'sass', 'bootstrap'],
+        screenshot: '/images/screenshots/musicmaster.png',
         description: "Sign in with your Spotify account to play popular songs by your favorite artists.",
-        why: "I was initially building a more simple version of this app while following David Katz's Udemy course.",
-        coolFeature: "Spotify changed their API to require authentication, so I needed to learn about OAuth and try to implement it all on my own. For my first time handling OAuth by myself, I'm very proud of the result.",
-        date: 'February 2018'
+        why: "I was initially building a more simple version of this app while following David Katz's Udemy course. I love music and I am a Spotify user and it seemed like a good project to learn more about React.",
+        coolFeature: "When David Katz made his course, Spotify didn't require authentication for their API. Then, Spotify changed their API to require authentication, so I needed to learn about OAuth and try to implement it all on my own. For my first time handling OAuth by myself, I'm very proud of the result.",
+        date: 'January 2018'
     },
     'expensify': {
         title: 'Expensify',
@@ -26,12 +26,12 @@ const apps = {
         demoURL: 'https://jaketripp-expensify.herokuapp.com/',
         infoURLName: 'expensify',
         githubURL: 'https://github.com/jaketripp/expensify',
-        techList: [],
-        screenshot: '',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        techList: ['react', 'redux', 'react-router', 'node', 'webpack', 'jest', 'express', 'es6', 'firebase', 'babel', 'sass'],
+        screenshot: '/images/screenshots/expensify.jpg',
+        description: "Keep track of your expenses with this powerful and intuitive app!",
+        why: "I made the bulk of this app as the capstone project of Andrew Mead's Udemy course. It used all of the things we learned in the course, and then I added some features of my own.",
+        coolFeature: "As a user, I really enjoy when I can sign up for something using another account, so I went ahead and leveraged Firebase to handle the authentication for Google, Facebook, Twitter, and GitHub. I also added a confirmation modal for when the user tries to delete an expense. Finally, I added the user's picture and name, which I think brings the user a sense of familiarity and belonging.",
+        date: 'December 2017'
     },
     'hairbyfrancisco': {
         title: 'Hair by Francisco',
