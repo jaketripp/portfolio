@@ -1,5 +1,9 @@
 .content-container {
-  margin: 0 auto;
-  padding: 0 $m-size;
-  max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 $m-size;
+	width: 1200px;
+	max-width: 95%;
+	@media (min-width: 600px) {
+		max-width: 90%;
+	}
 }
