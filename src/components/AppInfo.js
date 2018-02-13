@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Radium from 'radium';
 
+import { techObj } from '../data/tech';
+
 export const AppInfo = ({ app }) => {
     const btnStyle = {
         background: app.style.color,
@@ -20,11 +22,33 @@ export const AppInfo = ({ app }) => {
                 <div className="content">
                     <div className="screenshot">
                         <img src={app.screenshot} alt={`${app.title} screenshot`} />
+                        <div className="gradient"></div>
                     </div>
                     <div className="text">
                         <div className="buttons">
                             <a className="card__links__button" style={btnStyle} key={app.demoURL} href={app.demoURL}>Demo</a>
                             <a className="card__links__button" style={btnStyle} key={app.githubURL} href={app.githubURL}>GitHub</a>
+                        </div>
+                        <div className="app-info__description">
+                            <p><strong>Description: </strong>{app.description}</p>
+                        </div>
+                        <div className="app-info__why">
+                            <p><strong>Why I made <em>{app.title}</em>: </strong>{app.why}</p>
+                        </div>
+                        <div className="app-info__coolFeature">
+                            <p><strong>One feature I'm proud of: </strong>{app.coolFeature}</p>
+                        </div>
+                        <div className="app-info__date">
+                            <p><strong>Date: </strong>{app.date}</p>
+                        </div>
+                        <div className="app-info__tech">
+                            {
+                                app.techList.map((tech, i) => {
+                                    return (
+                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name} logo`} key={i} className={`${tech} tech-icon`}/>
+                                    )
+                                })
+                            }
                         </div>
                     </div>
                 </div>
