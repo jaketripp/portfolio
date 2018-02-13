@@ -7,7 +7,6 @@
     .content {
         display: flex;
         justify-content: center;
-        align-items: center;
         flex-wrap: wrap;
     }
     .screenshot {
@@ -28,12 +27,17 @@
         }
     }
     .text {
-        flex: 1 0 100%;
+        flex: 1 1 500px;
+        padding: 20px;
+        color: #666;
+        font-size: 20px;
+        .buttons .card__links__button {
+            margin-right: 15px;
+        }
     }
     .app-info__tech {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
     }
 }
