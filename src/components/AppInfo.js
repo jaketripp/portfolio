@@ -40,7 +40,7 @@ export const AppInfo = ({ app }) => {
                         </div>
                         <div className="app-info__date">
                             <p><strong>Date: </strong>{app.date}</p>
-                            <p style={{marginBottom: '0px'}}><strong>Tech: </strong></p>
+                            <p id="tech-p"><strong>Tech: </strong></p>
                         </div>
                         <div className="app-info__tech">
                             {
