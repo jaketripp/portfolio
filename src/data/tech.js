@@ -82,6 +82,10 @@ const techObj = {
     'bootstrap': {
         logo: '/images/tech/bootstrap.svg',
         name: 'Bootstrap'
+    },
+    'jquery': {
+        logo: '/images/tech/jquery.svg',
+        name: 'jQuery'
     }
 };
 
