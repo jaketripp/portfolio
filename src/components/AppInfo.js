@@ -45,7 +45,7 @@ export const AppInfo = ({ app }) => {
                             {
                                 app.techList.map((tech, i) => {
                                     return (
-                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name} logo`} key={i} className={`${tech} tech-icon`}/>
+                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name} logo`} key={i} id={tech} className="tech-icon"/>
                                     )
                                 })
                             }
