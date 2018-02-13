@@ -9,7 +9,7 @@ const apps = {
         demoURL: 'https://jaketripp-music-master.herokuapp.com/',
         infoURLName: 'musicmaster',
         githubURL: 'https://github.com/jaketripp/music-master',
-        techList: ['webpack', 'mongodb', 'firebase', 'node', 'npm', 'oauth', 'express', 'react', 'redux', 'react-router', 'es6', 'sass', 'babel', 'socketio', 'css-3', 'javascript', 'html-5', 'jest', 'momentjs', 'mailchimp', 'semantic-ui', 'bootstrap'],
+        techList: ['react', 'node', 'express', 'es6', 'webpack', 'babel', 'sass', 'bootstrap', 'oauth'],
         screenshot: '/images/screenshots/music-master-screenshot.png',
         description: "Sign in with your Spotify account to play popular songs by your favorite artists.",
         why: "I was initially building a more simple version of this app while following David Katz's Udemy course.",

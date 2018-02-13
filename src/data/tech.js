@@ -1,91 +1,87 @@
 const techObj = {
     'webpack': {
         logo: '/images/tech/webpack.svg',
-        name: 'webpack'
+        name: 'Webpack'
     },
     'mongodb': {
         logo: '/images/tech/mongodb.svg',
-        name: 'mongodb'
+        name: 'MongoDB'
     },
     'firebase': {
         logo: '/images/tech/firebase.svg',
-        name: 'firebase'
+        name: 'Firebase'
     },
     'node': {
         logo: '/images/tech/node.svg',
-        name: 'node'
-    },
-    'npm': {
-        logo: '/images/tech/npm.svg',
-        name: 'npm'
+        name: 'Node.js'
     },
     'oauth': {
         logo: '/images/tech/oauth.svg',
-        name: 'oauth'
+        name: 'OAuth'
     },
     'express': {
         logo: '/images/tech/express.svg',
-        name: 'express'
+        name: 'Express'
     },
     'react': {
         logo: '/images/tech/react.svg',
-        name: 'react'
+        name: 'React'
     },
     'redux': {
         logo: '/images/tech/redux.svg',
-        name: 'redux'
+        name: 'Redux'
     },
     'react-router': {
         logo: '/images/tech/react-router.svg',
-        name: 'react-router'
+        name: 'React Router'
     },
     'es6': {
         logo: '/images/tech/es6.svg',
-        name: 'es6'
+        name: 'ES6'
     },
     'sass': {
         logo: '/images/tech/sass.svg',
-        name: 'sass'
+        name: 'Sass'
     },
     'babel': {
         logo: '/images/tech/babel.svg',
-        name: 'babel'
+        name: 'Babel'
     },
     'socketio': {
         logo: '/images/tech/socketio.svg',
-        name: 'socketio'
+        name: 'Socket.IO'
     },
     'css-3': {
         logo: '/images/tech/css-3.svg',
-        name: 'css-3'
+        name: 'CSS3'
     },
     'javascript': {
         logo: '/images/tech/javascript.svg',
-        name: 'javascript'
+        name: 'JavaScript'
     },
     'html-5': {
         logo: '/images/tech/html-5.svg',
-        name: 'html-5'
+        name: 'HTML5'
     },
     'jest': {
         logo: '/images/tech/jest.svg',
-        name: 'jest'
+        name: 'Jest'
     },
     'momentjs': {
         logo: '/images/tech/momentjs.svg',
-        name: 'momentjs'
+        name: 'Moment.js'
     },
     'mailchimp': {
         logo: '/images/tech/mailchimp.svg',
-        name: 'mailchimp'
+        name: 'MailChimp'
     },
     'semantic-ui': {
         logo: '/images/tech/semantic-ui.svg',
-        name: 'semantic-ui'
+        name: 'Semantic UI'
     },
     'bootstrap': {
         logo: '/images/tech/bootstrap.svg',
-        name: 'bootstrap'
+        name: 'Bootstrap'
     }
 };
 
