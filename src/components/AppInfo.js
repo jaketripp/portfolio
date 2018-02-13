@@ -22,7 +22,7 @@ export const AppInfo = ({ app }) => {
                 <div className="content">
                     <div className="screenshot">
                         <img src={app.screenshot} alt={`${app.title} screenshot`} />
-                        <div className="gradient"></div>
+                        <a href={app.demoURL}><div className="gradient"></div></a>
                     </div>
                     <div className="text">
                         <div className="buttons">
@@ -40,12 +40,13 @@ export const AppInfo = ({ app }) => {
                         </div>
                         <div className="app-info__date">
                             <p><strong>Date: </strong>{app.date}</p>
+                            <p><strong>Tech: </strong></p>
                         </div>
                         <div className="app-info__tech">
                             {
                                 app.techList.map((tech, i) => {
                                     return (
-                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name} logo`} key={i} id={tech} className="tech-icon"/>
+                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name} logo`} key={i} id={tech} className="tech-icon" />
                                     )
                                 })
                             }
