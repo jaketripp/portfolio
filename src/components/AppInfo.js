@@ -36,17 +36,17 @@ export const AppInfo = ({ app }) => {
                             <p><strong>Why I made <em>{app.title}</em>: </strong>{app.why}</p>
                         </div>
                         <div className="app-info__coolFeature">
-                            <p><strong>One feature I'm proud of: </strong>{app.coolFeature}</p>
+                            <p><strong>Feature(s) I'm proud of: </strong>{app.coolFeature}</p>
                         </div>
                         <div className="app-info__date">
                             <p><strong>Date: </strong>{app.date}</p>
-                            <p><strong>Tech: </strong></p>
+                            <p style={{marginBottom: '0px'}}><strong>Tech: </strong></p>
                         </div>
                         <div className="app-info__tech">
                             {
                                 app.techList.map((tech, i) => {
                                     return (
-                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name} logo`} key={i} id={tech} className="tech-icon" />
+                                        <img src={techObj[tech].logo} alt={`${techObj[tech].name} logo`} title={`${techObj[tech].name}`} key={i} id={tech} className="tech-icon" />
                                     )
                                 })
                             }
