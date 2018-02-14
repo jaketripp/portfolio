@@ -57,7 +57,7 @@
     align-items: center;
     h3 {           
         font-size: 36px;
-        margin: 0 30px 10px;
+        margin: 0 32px 16px;
         text-align: center;
         line-height: 1.0;
     }
@@ -69,14 +69,12 @@
     }
 }
 
-
-
 a.card__links__button {
     margin: 8px auto;
     width: 100%;
     font-size: 20px;
-    padding: 4px 20px;
-    border-radius: 41px;
+    padding: 4px 24px;
+    border-radius: 40px;
     text-decoration: none;
     &:hover {
         transition: .3s ease;
