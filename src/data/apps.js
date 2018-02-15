@@ -79,7 +79,7 @@ const apps = {
         githubURL: 'https://github.com/sacodingchallenge/sacodingchallenge',
         techList: ['node', 'express', 'momentjs', 'html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/sacc.png',
-        description: "The San Antonio Coding Challenge is a monthly networking event featuring a coding competition and other fun games. The monthly Coding Challenge is free and open for everyone.",
+        description: "The San Antonio Coding Challenge is a meetup group that holds a monthly coding competition in San Antonio.",
         why: "Gene Carangal, the founder of the meetup, is a really great guy and I really enjoy attending this meetup. Gene noticed that I was looking for work to boost my résumé, and the website needed a lot of work, and the rest is history.",
         coolFeature: "This was one of my first Node.js apps where I did almost everything entirely on my own, which was a big milestone for me. I also chose to use EJS templating, which really helped cut the time for development.",
         date: "October 2017"
@@ -128,12 +128,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/simon/',
         infoURLName: 'simon',
         githubURL: 'https://github.com/jaketripp/simon/',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/simon.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Just like the old Simon game from your childhood. Get through round 20 for a nostalgic sound effect.",
+        why: "This was the last project from freeCodeCamp's Advanced Front End Development Projects. I remember playing this game as a kid, and it seemed like a good challenge.",
+        coolFeature: "I picked a really simple layout, I found soothing sound effects instead of monotonous beep sounds, and I put a subtle CSS animation on the tile that is active. I also had to get more familiar with HTML audio elements to get the behavior I wanted.",
+        date: "August 2017"
     },
     'yelpcamp': {
         title: 'YelpCamp',
