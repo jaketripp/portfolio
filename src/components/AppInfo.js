@@ -36,7 +36,7 @@ export const AppInfo = ({ app }) => {
                             <p><strong>Why I made <em>{app.title}</em>: </strong>{app.why}</p>
                         </div>
                         <div className="app-info__coolFeature">
-                            <p><strong>Feature(s) I'm proud of: </strong>{app.coolFeature}</p>
+                            <p><strong>What I'm proud of: </strong>{app.coolFeature}</p>
                         </div>
                         <div className="app-info__date">
                             <p><strong>Date: </strong>{app.date}</p>
