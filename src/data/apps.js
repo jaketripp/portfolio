@@ -111,12 +111,12 @@ const apps = {
         demoURL: 'http://jaketripp-chat-app.herokuapp.com/',
         infoURLName: 'chat',
         githubURL: 'https://github.com/jaketripp/node-chat-app',
-        techList: [],
+        techList: ['node', 'express', 'momentjs', 'socketio', 'html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/chat.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Pick a username, pick a chatroom from a list (or create your own), and tell your friends to join!",
+        why: "I built this course while following Andrew Mead's Udemy course on Node.js.",
+        coolFeature: "I added the feature of being able to see a list of currently open chatrooms. This was also my first project using web sockets with Socket.IO.",
+        date: "November 2017"
     },
     'simon': {
         title: 'Simon Game',
