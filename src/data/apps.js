@@ -94,12 +94,12 @@ const apps = {
         demoURL: 'https://jaketripp-countdown-champ.herokuapp.com/',
         infoURLName: 'countdownchamp',
         githubURL: 'https://github.com/jaketripp/countdown-champ',
-        techList: [],
+        techList: ['react', 'node', 'webpack', 'es6', 'babel', 'css-3', 'bootstrap'],
         screenshot: '/images/screenshots/countdownchamp.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Type in a date and Countdown Champ will tell you the time until.",
+        why: "I built this course while following David Katz's Udemy course. I actually built a very similar, simple countdown app for my brother who was getting married, but this is a definite step up.",
+        coolFeature: "By using a combination of React with JavaScript's setInterval function, the app counts down the seconds and updates seamlessly when you enter a new date.",
+        date: "January 2018"
     },
     'chat': {
         title: 'Chat',
