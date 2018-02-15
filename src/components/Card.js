@@ -7,7 +7,9 @@ class Card extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            btnEnabled: false,
+            blockStyle: {
+                'display': 'block'
+            },
             ...props
         }
     }
@@ -19,6 +21,23 @@ class Card extends Component {
     // componentWillUpdate() {
     //     console.log('btn enabled', this.state.btnEnabled);
     // }
+    restoreBlock() {
+        this.setState({
+            blockStyle: {
+                'display': 'block'
+            }
+        });
+    }
+
+    removeBlock() {
+        setTimeout(() => {
+            this.setState({
+                blockStyle: {
+                    'display': 'none'
+                }
+            });
+        }, 10);
+    }
 
     render() {
         const cardStyle = {
@@ -39,12 +58,17 @@ class Card extends Component {
             },
         };
 
+        // block buttons until 10 ms after mouse has entered card
+        // block buttons on mouseLeave
         return (
-            <div className="card" style={cardStyle}>
+            <div className="card" style={cardStyle} onMouseEnter={(e) => this.removeBlock(e)} onMouseLeave={() => this.restoreBlock()}>
                 <img src={this.state.data.logo} alt={`${this.state.data.title} logo`} className="image" />
                 <div className="overlay" style={overlayStyle}>
                     <h3>{this.state.data.title}</h3>
                     <div className="text">
+
+                        <div className="block" style={this.state.blockStyle}></div>
+
                         <a className="card__links__button" style={btnStyle} key={this.state.data.demoURL} href={this.state.data.demoURL}>Demo</a>
                         <a className="card__links__button" style={btnStyle} key={this.state.data.githubURL} href={this.state.data.githubURL}>GitHub</a>
                         <RadiumLink className="card__links__button" style={btnStyle} to={`/about/${this.state.data.infoURLName}`}>More Info</RadiumLink>
