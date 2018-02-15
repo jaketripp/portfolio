@@ -86,6 +86,10 @@ const techObj = {
     'jquery': {
         logo: '/images/tech/jquery.svg',
         name: 'jQuery'
+    },
+    'modernizr': {
+        logo: '/images/tech/modernizr.svg',
+        name: 'Modernizr'
     }
 };
 
