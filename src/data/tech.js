@@ -90,6 +90,10 @@ const techObj = {
     'modernizr': {
         logo: '/images/tech/modernizr.svg',
         name: 'Modernizr'
+    },
+    'passport': {
+        logo: '/images/tech/passport.svg',
+        name: 'Passport.js'
     }
 };
 
