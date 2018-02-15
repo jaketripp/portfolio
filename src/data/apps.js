@@ -43,7 +43,7 @@ const apps = {
         demoURL: 'http://hairbyfrancisco.com',
         infoURLName: 'hairbyfrancisco',
         githubURL: 'https://github.com/jaketripp/hairByFrancisco/',
-        techList: ['html-5', 'css-3', 'javascript', 'jquery', 'semantic-ui'],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/hairbyfrancisco.jpg',
         description: "Francisco Mejia is a passionate, local hairstylist. Clients of Francisco love his creative vision, his ability to give people the perfect haircut/style/color, his attention to detail, and his friendly personality.",
         why: "Francisco is my barber and his website didn't show off his skills very well. I also wanted to add real work to my résumé.",
@@ -60,12 +60,12 @@ const apps = {
         demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery', 'modernizr'],
         screenshot: '/images/screenshots/asoftoday.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "As of Today provides a helpful way to track the statistics of a life after habitual addiction.",
+        why: "My mom was addicted to Diet Coke for most of her adult life. She tried multiple times to quit - all unsuccessful. She usually drank six Diet Cokes a day. Partly with the help of As of Today, she successfully quit on February 23, 2017. That's a lot of Diet Cokes! Now, she has lower cholesterol and blood pressure, healthier body weight and dental hygiene, more balanced emotional health, and less pain. I want that for everyone.",
+        coolFeature: "When I made As of Today, I was new to databases. And I also wanted to respect people's privacy, because addiction is a very personal thing. So I opted to use localStorage to store some simple info in the user's browser and have the site update on refresh.",
+        date: 'July 2017'
     },
     'sacc': {
         title: 'SA Coding Challenge',
