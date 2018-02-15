@@ -97,7 +97,7 @@ const apps = {
         techList: ['react', 'node', 'webpack', 'es6', 'babel', 'css-3', 'bootstrap'],
         screenshot: '/images/screenshots/countdownchamp.png',
         description: "Type in a date and Countdown Champ will tell you the time until.",
-        why: "I built this course while following David Katz's Udemy course. I actually built a very similar, simple countdown app for my brother who was getting married, but this is a definite step up.",
+        why: "I built this app while following David Katz's Udemy course. I actually built a very similar, simple countdown app for my brother who was getting married, but this is a definite step up.",
         coolFeature: "By using a combination of React with JavaScript's setInterval function, the app counts down the seconds and updates seamlessly when you enter a new date.",
         date: "January 2018"
     },
@@ -114,7 +114,7 @@ const apps = {
         techList: ['node', 'express', 'momentjs', 'socketio', 'html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/chat.png',
         description: "Pick a username, pick a chatroom from a list (or create your own), and tell your friends to join!",
-        why: "I built this course while following Andrew Mead's Udemy course on Node.js.",
+        why: "I built this app while following Andrew Mead's Udemy course on Node.js.",
         coolFeature: "I added the feature of being able to see a list of currently open chatrooms. This was also my first project using web sockets with Socket.IO.",
         date: "November 2017"
     },
@@ -145,12 +145,12 @@ const apps = {
         demoURL: 'https://jaketripp-yelp-camp.herokuapp.com/',
         infoURLName: 'yelpcamp',
         githubURL: 'https://github.com/jaketripp/yelpcamp',
-        techList: [],
+        techList: ['node', 'mongodb', 'express', 'passport', 'html-5', 'css-3', 'javascript', 'bootstrap'],
         screenshot: '/images/screenshots/yelpcamp.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "View hand-picked campgrounds from all over the world! Sign up to add your own campgrounds or leave comments on other campgrounds.",
+        why: "I built this app while following Colt Steele's Web Dev Bootcamp Udemy course. This was the final and most complex project of the course.",
+        coolFeature: "This was my first exposure to authentication (in this instance using Passport.js). At the time, this was also the most advanced work I'd done with databases (in this instance, MongoDB).",
+        date: "May 2017"
     },
     'calculator': {
         title: 'Calculator',
