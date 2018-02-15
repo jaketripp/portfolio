@@ -29,7 +29,7 @@ class Card extends Component {
                     'display': 'none'
                 }
             });
-        }, 10);
+        }, 100);
     }
 
     render() {
@@ -51,10 +51,16 @@ class Card extends Component {
             },
         };
 
-        // block buttons until 10 ms after mouse has entered card
+        // block buttons until 10 ms after mouse has entered card or 10ms after mouse has clicked card (for weird mobile bug)
+            // to reproduce bug on mobile, click more info on one
+            // click back
+            // click to induce hover
+            // try to click more info, doesn't work
+            // onMouseUp event fixed it
         // block buttons on mouseLeave
+
         return (
-            <div className="card" style={cardStyle} onMouseEnter={(e) => this.removeBlock(e)} onMouseLeave={() => this.restoreBlock()}>
+            <div className="card" style={cardStyle} onMouseEnter={() => this.removeBlock()} onMouseLeave={() => this.restoreBlock()} onMouseUp={() => this.removeBlock()}>
                 <img src={this.state.data.logo} alt={`${this.state.data.title} logo`} className="image" />
                 <div className="overlay" style={overlayStyle}>
                     <h3>{this.state.data.title}</h3>
