@@ -62,7 +62,6 @@
         line-height: 1.0;
     }
     .text {
-        font-size: 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -73,11 +72,14 @@ a.card__links__button {
     margin: 8px auto;
     width: 100%;
     font-size: 20px;
-    padding: 4px 24px;
+    padding: 4px 16px;
     border-radius: 40px;
     text-decoration: none;
     &:hover {
         transition: .3s ease;
+    }
+    @media (min-width: 800px) {
+        padding: 4px 24px;
     }
 }
 
