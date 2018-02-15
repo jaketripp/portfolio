@@ -196,12 +196,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/tictactoe/',
         infoURLName: 'tictactoe',
         githubURL: 'https://github.com/jaketripp/tictactoe/',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/tictactoe.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Play Tic Tac Toe against a formidable opponent.",
+        why: "This was a project from freeCodeCamp's Advanced Front End Development Projects. Tic tac toe is a simple game, and so I wanted to see if writing a bot was equally simple. It was not.",
+        coolFeature: "I had to think very algorithmically. I had to maintain state so that the bot would know which move is probably a good one. I ranked the best moves. At the time, I tried to implement the infamous minimax algorithm but it proved too complex for me, although I may take a stab at it at a later date. While not unbeatable, my bot has beat most people I've shown it to.",
+        date: "September 2017"
     },
     'colorconversion': {
         title: 'Color Conversion',
