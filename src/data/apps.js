@@ -57,7 +57,7 @@ const apps = {
             backgroundColor: '#184860'
         },
         logo: '/images/cards/asoftoday.jpg',
-        demoURL: 'http://asoftoday.me', // 'https://jaketripp.com/apps/asoftoday'
+        demoURL: 'http://asoftoday.me',
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
         techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery', 'modernizr'],
@@ -77,12 +77,12 @@ const apps = {
         demoURL: 'http://sacodingchallenge.com',
         infoURLName: 'sacc',
         githubURL: 'https://github.com/sacodingchallenge/sacodingchallenge',
-        techList: [],
+        techList: ['node', 'express', 'momentjs', 'html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/sacc.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "The San Antonio Coding Challenge is a monthly networking event featuring a coding competition and other fun games. The event is put together by volunteers from the San Antonio Coding Challenge Meetup group. The monthly Coding Challenge is free and open for everyone.",
+        why: "Gene Carangal, the founder of the meetup, is a really great guy and I really enjoy attending this meetup. Gene noticed that I was looking for work to boost my résumé, and the website needed a lot of work, and the rest is history.",
+        coolFeature: "This was one of my first Node.js apps where I did it completely on my own. It was also my first time using EJS templating on my own, which really helped cut the time for development.",
+        date: "October 2017"
     },
     'countdownchamp': {
         title: 'Countdown Champ',
@@ -96,10 +96,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/countdown-champ',
         techList: [],
         screenshot: '/images/screenshots/countdownchamp.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'chat': {
         title: 'Chat',
@@ -113,10 +113,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/node-chat-app',
         techList: [],
         screenshot: '/images/screenshots/chat.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'simon': {
         title: 'Simon Game',
@@ -130,10 +130,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/simon/',
         techList: [],
         screenshot: '/images/screenshots/simon.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'yelpcamp': {
         title: 'YelpCamp',
@@ -147,10 +147,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/yelpcamp',
         techList: [],
         screenshot: '/images/screenshots/yelpcamp.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'calculator': {
         title: 'Calculator',
@@ -164,10 +164,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/calculator/',
         techList: [],
         screenshot: '/images/screenshots/calculator.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'seasonal': {
         title: 'Seasonal',
@@ -181,10 +181,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/Seasonal',
         techList: [],
         screenshot: '/images/screenshots/seasonal.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'tictactoe': {
         title: 'Tic Tac Toe',
@@ -198,10 +198,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/tictactoe/',
         techList: [],
         screenshot: '/images/screenshots/tictactoe.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'colorconversion': {
         title: 'Color Conversion',
@@ -215,10 +215,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/Color-Conversion/',
         techList: [],
         screenshot: '/images/screenshots/colorconversion.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'piglatinconverter': {
         title: 'Pig Latin Converter',
@@ -232,10 +232,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/PigLatinConverter',
         techList: [],
         screenshot: '/images/screenshots/piglatinconverter.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'wikiviewer': {
         title: 'Wiki Viewer',
@@ -249,10 +249,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/wikiviewer/',
         techList: [],
         screenshot: '/images/screenshots/wikiviewer.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     },
     'kokolunchbox': {
         title: 'Koko Lunchbox',
@@ -266,10 +266,10 @@ const apps = {
         githubURL: 'https://github.com/jaketripp/Koko-Lunchbox',
         techList: [],
         screenshot: '/images/screenshots/kokolunchbox.png',
-        description: '',
-        why: '',
-        coolFeature: '',
-        date: ''
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: ""
     }
 };
 
