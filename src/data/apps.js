@@ -179,12 +179,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/Seasonal',
         infoURLName: 'seasonal',
         githubURL: 'https://github.com/jaketripp/Seasonal',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/seasonal.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "A comprehensive tool to aid with picking out fresh fruit. Seasonal is one of my very first projects, and it was the first project where I used Git and GitHub. I researched all of the information myself. ",
+        why: "I was really fed up with two things: 1) going to the grocery store and only picking the fruit I was familiar with and 2) not knowing whether fruit was ripe or not.",
+        coolFeature: "Seasonal tells you what fruit is in season based on the month, what signs to look for that signify ripeness, the health benefits of the fruit (with links), and more! ",
+        date: "Jan 2017"
     },
     'tictactoe': {
         title: 'Tic Tac Toe',
