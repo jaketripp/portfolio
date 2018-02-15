@@ -7,9 +7,18 @@ class Card extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            btnEnabled: false,
             ...props
         }
     }
+
+    // mouse() {
+    //     this.setState({ btnEnabled: !this.btnEnabled });
+    // }
+    
+    // componentWillUpdate() {
+    //     console.log('btn enabled', this.state.btnEnabled);
+    // }
 
     render() {
         const cardStyle = {
