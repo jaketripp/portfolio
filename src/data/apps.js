@@ -207,7 +207,7 @@ const apps = {
         title: 'Color Conversion',
         style: {
             color: '#FFFFFF',
-            backgroundColor: '#a81890'
+            backgroundColor: '#A81890'
         },
         logo: '/images/cards/color.jpg',
         demoURL: 'https://jaketripp.github.io/Color-Conversion/',
