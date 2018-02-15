@@ -162,12 +162,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/calculator/',
         infoURLName: 'calculator',
         githubURL: 'https://github.com/jaketripp/calculator/',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/calculator.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Four function calculator.",
+        why: "This was a project from freeCodeCamp's Advanced Front End Development Projects. I'm a huge math geek, and it seemed like a great introductory challenge for getting accustomed to working with state.",
+        coolFeature: "I created this project before I knew anything about React. Maintaining the state of what the user is seeing and the state of the calculations and keeping them separate and updated proved quite challenging. I carefully created the user interface based on memories of four function calculators from my childhood (just look at that font!).",
+        date: "September 2017"
     },
     'seasonal': {
         title: 'Seasonal',
