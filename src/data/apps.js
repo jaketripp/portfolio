@@ -105,7 +105,7 @@ const apps = {
         title: 'Chat',
         style: {
             color: '#ffffff',
-            backgroundColor: '#78a8d8'
+            backgroundColor: '#283646'
         },
         logo: '/images/cards/chat.jpg',
         demoURL: 'http://jaketripp-chat-app.herokuapp.com/',
@@ -274,7 +274,3 @@ const apps = {
 };
 
 module.exports = { apps };
-
-// chat
-// include this on page
-// <a href="https://www.freepik.com/free-vector/chat-speech-bubble-icon_761194.htm">Designed by Freepik</a>
