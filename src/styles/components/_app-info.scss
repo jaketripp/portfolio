@@ -38,6 +38,9 @@
         padding: 40px 0 0;
         color: #666;
         font-size: 20px;
+        p {
+            margin: 16px 0;
+        }
         @media (min-width: 1100px) {
             padding: 24px 0 0 16px;
         }
