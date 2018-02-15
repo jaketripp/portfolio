@@ -79,9 +79,9 @@ const apps = {
         githubURL: 'https://github.com/sacodingchallenge/sacodingchallenge',
         techList: ['node', 'express', 'momentjs', 'html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/sacc.png',
-        description: "The San Antonio Coding Challenge is a monthly networking event featuring a coding competition and other fun games. The event is put together by volunteers from the San Antonio Coding Challenge Meetup group. The monthly Coding Challenge is free and open for everyone.",
+        description: "The San Antonio Coding Challenge is a monthly networking event featuring a coding competition and other fun games. The monthly Coding Challenge is free and open for everyone.",
         why: "Gene Carangal, the founder of the meetup, is a really great guy and I really enjoy attending this meetup. Gene noticed that I was looking for work to boost my résumé, and the website needed a lot of work, and the rest is history.",
-        coolFeature: "This was one of my first Node.js apps where I did it completely on my own. It was also my first time using EJS templating on my own, which really helped cut the time for development.",
+        coolFeature: "This was one of my first Node.js apps where I did almost everything entirely on my own, which was a big milestone for me. I also chose to use EJS templating, which really helped cut the time for development.",
         date: "October 2017"
     },
     'countdownchamp': {
