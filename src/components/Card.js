@@ -5,14 +5,13 @@ import Overlay from './Overlay';
 class Card extends Component {
     constructor(props) {
         super(props);
-        this.handleMouseHover = this.handleMouseHover.bind(this);
         this.state = {
             isHovering: false,
             ...props
         }
     }
 
-    handleMouseHover() {
+    handleMouseHover = () => {
         this.setState({
             isHovering: !this.state.isHovering,
         });
