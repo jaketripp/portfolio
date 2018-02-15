@@ -105,7 +105,7 @@ const apps = {
         title: 'Chat',
         style: {
             color: '#ffffff',
-            backgroundColor: '#283646'
+            backgroundColor: '#276b82'
         },
         logo: '/images/cards/chat.jpg',
         demoURL: 'http://jaketripp-chat-app.herokuapp.com/',
