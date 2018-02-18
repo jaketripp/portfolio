@@ -1,12 +1,12 @@
 import React from 'react';
 import Footer from './Footer';
-import Header from './Header';
+import Nav from './Nav';
 import Bio from './Bio';
 import CardList from './CardList';
 
 const HomePage = () => (
   <div>
-    <Header />
+    <Nav />
     <Bio />
     <CardList />
     <Footer />

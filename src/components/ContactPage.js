@@ -1,10 +1,10 @@
 import React from 'react';
 import Footer from './Footer';
-import Header from './Header';
+import Nav from './Nav';
 
 const ContactPage = () => (
     <div>
-        <Header />
+        <Nav />
         <div className="app-info">
             <form className="ui form" method="post" action="mailer.php" onsubmit="checkSuccess()">
                 <div className="field">

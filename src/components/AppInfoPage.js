@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import Footer from './Footer';
 import AppInfo from './AppInfo';
-import Header from './Header';
+import Nav from './Nav';
 import NotFoundPage from './NotFoundPage';
 import { apps } from '../data/apps';
 
@@ -12,7 +12,7 @@ const AppInfoPage = (props) => {
     if (!!apps[appName]) {
         return (
             <div>
-                <Header />
+                <Nav />
                 <AppInfo app={apps[appName]}/>
                 <Footer />
             </div>

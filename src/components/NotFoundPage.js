@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Header from './Header';
+import Nav from './Nav';
 import Footer from './Footer';
 
 const NotFoundPage = () => (
 	<div>
-		<Header />
+		<Nav />
 		<div className="content-container">
 			<div className="not-found-page">
 				<div className="app-info">
