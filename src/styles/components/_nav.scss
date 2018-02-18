@@ -1,0 +1,35 @@
+.navbar {
+  background: $main;
+}
+
+.navbar__content {
+  align-items: stretch;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;
+}
+
+.navbar__title {
+  color: white;
+  text-decoration: none;
+  h1 {
+    margin: 0;
+    font-size: 4rem;
+    line-height: 1.4;
+  }
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  a {
+    color: white;
+    text-decoration: none;
+    margin: 0;
+    padding: 8px 16px;
+    transition: .3s ease;
+    &:hover {
+      background: rgba(255,255,255,0.1);
+    }
+  }
+}
