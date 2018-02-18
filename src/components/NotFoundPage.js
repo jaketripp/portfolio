@@ -9,7 +9,9 @@ const NotFoundPage = () => (
 		<Header />
 		<div className="content-container">
 			<div className="not-found-page">
-				<h1>404 - <Link to="/">Go home</Link></h1>
+				<div className="app-info">
+					<h1>404 - <Link to="/">Go home</Link></h1>
+				</div>
 			</div>
 		</div>
 		<Footer />
