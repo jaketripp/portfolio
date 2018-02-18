@@ -213,12 +213,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/Color-Conversion/',
         infoURLName: 'colorconversion',
         githubURL: 'https://github.com/jaketripp/Color-Conversion/',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/colorconversion.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Convert hexadecimal to RGB and see live color changes.",
+        why: "I was learning about how colors are represented on the web using hexadecimal numbers or RGB. I figured there was a way to convert, and I was right. I thought making a converter would be a good challenge and help me train myself to be able to see a hexadecimal number and roughly guess the color.",
+        coolFeature: "I added a lot of little things that make the user experience more enjoyable: the inputs only allow valid characters, the inputs auto tab, it has a CSS animation on the background so you can watch as the colors change, etc.",
+        date: "January 2018"
     },
     'piglatinconverter': {
         title: 'Pig Latin Converter',
@@ -230,12 +230,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/PigLatinConverter/',
         infoURLName: 'piglatinconverter',
         githubURL: 'https://github.com/jaketripp/PigLatinConverter',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/piglatinconverter.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Convert from English to Pig Latin and back!",
+        why: "I remember speaking in Pig Latin to my friends as a kid. I was learning about Regular Expressions and I wanted to see if I could use my new found knowledge to create a converter. I really could have used it with my friends as a kid to speed up our conversations!",
+        coolFeature: "Pig Latin has an ambiguity. Both 'wart' and 'art' translated into Pig Latin are 'art-way' - meaning if a human saw the Pig Latin word 'art-way,' the only way to decide whether it's 'wart' or 'art' is context. To combat this problem, when converting from Pig Latin back to English, I created a great solution: I add an asterix. If there is a *, it either means the word may have a 'w' at the beginning or it may just start with a vowel. I think it's easier to disregard the asterix from words that just start with a vowel than to intuitively know to add a 'w' to words that originally had one.",
+        date: "June 2017"
     },
     'wikiviewer': {
         title: 'Wiki Viewer',
@@ -247,12 +247,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/wikiviewer/',
         infoURLName: 'wikiviewer',
         githubURL: 'https://github.com/jaketripp/wikiviewer/',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
         screenshot: '/images/screenshots/wikiviewer.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Browse for Wikipedia articles.",
+        why: "This was a project from freeCodeCamp's Intermediate Front End Development Projects. I also needed more practice with working with APIs.",
+        coolFeature: "This was one of my first projects working with CSS Flexbox, and I'm happy with how the layout turned out. For a surprise, try leaving the search bar blank!",
+        date: "September 2017"
     },
     'kokolunchbox': {
         title: 'Koko Lunchbox',
@@ -264,12 +264,12 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/Koko-Lunchbox/',
         infoURLName: 'kokolunchbox',
         githubURL: 'https://github.com/jaketripp/Koko-Lunchbox',
-        techList: [],
+        techList: ['html-5', 'css-3', 'javascript', 'bootstrap', 'jquery'],
         screenshot: '/images/screenshots/kokolunchbox.png',
-        description: "",
-        why: "",
-        coolFeature: "",
-        date: ""
+        description: "Koko Lunchbox in Provo, Utah delivers a fresh, fast and clean approach to Korean cuisine.",
+        why: "I used to work for Koko Lunchbox when my close friend was the owner/chef/manager. I love eating Korean food and wanted to learn how to cook it. I moved away and was learning web developement on the side, and wanted to make my friend a website and surprise her with it, but she told me she had sold the restaurant and it was under new management. Unfortunately, the site never went live and remained just a personal project, but I'm still quite proud of it and the talent I gained in cooking Korean cuisine.",
+        coolFeature: "For being one of my very first projects, I'm quite proud of this website. I went for an interface of pastel colors on a chalkboard texture background - this is because the restaurant's menu was written with chalk on a chalkboard. This was also my first experience in working with the Google Maps API, which makes finding the restaurant convenient.",
+        date: "January 2017"
     }
 };
 
