@@ -5,19 +5,24 @@ import createHistory from 'history/createBrowserHistory';
 import HomePage from '../components/HomePage';
 import NotFoundPage from '../components/NotFoundPage';
 import AppInfoPage from '../components/AppInfoPage';
+import ScrollToTop from '../components/ScrollToTop';
 
 export const history = createHistory();
 
 const AppRouter = () => (
   <Router history={history}>
-    <div>
-      <Switch>
-        <Route path="/" component={HomePage} exact={true}/>
-        <Route path="/about/:name" component={AppInfoPage}  />
-        <Route component={NotFoundPage} />
-      </Switch>
-    </div>
+    <ScrollToTop>
+      <div>
+        <Switch>
+          <Route path="/" component={HomePage} exact={true} />
+          <Route path="/about/:name" component={AppInfoPage} />
+          <Route component={NotFoundPage} />
+        </Switch>
+      </div>
+    </ScrollToTop>
   </Router>
 );
+
+
 
 export default AppRouter;
