@@ -5,7 +5,7 @@ import { apps } from '../data/apps';
 
 export const CardList = () => {
     return (
-        <div className="card-list">
+        <div className="card-list" id="work">
             {
                 Object.keys(apps).map((project, i) => {
                     return (
