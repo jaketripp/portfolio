@@ -8,14 +8,16 @@
 	}
 }
 
+.content-container-fluid {
+	margin: 0;
+	padding: 0 $l-size;
+	width: 100%;
+}
+
 .section {
 	width: 100%;
-	padding: 64px 0px;
+	padding: 64px 104px;
 	margin: 0px;
-	h3 {
-		font-size: 3rem;
-		margin: 0 0 8px 0;
-	}
 }
 
 .section__secondary {
