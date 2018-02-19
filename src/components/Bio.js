@@ -8,11 +8,10 @@ export const Bio = () => (
                 <div className="bio__image">
                     <img src="/images/pizza.jpg" alt="Me with some great 'za" />
                 </div>
-                <div className="bio__jumbo">
+                <div className="bio__jumbor">
                     <h2>FULL.</h2>
                     <h2>STACK.</h2>
-                    <h2>DEVELOPER.</h2>
-                    
+                    <h2>DEVELOPER.</h2> 
                 </div>
             </div>
         </div>
