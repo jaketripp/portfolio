@@ -7,11 +7,11 @@ import Footer from './Footer';
 const NotFoundPage = () => (
 	<div>
 		<Nav />
-		<div className="content-container">
-			<div className="not-found-page">
-				<div className="app-info">
-					<h1>404 - <Link to="/">Go home</Link></h1>
-				</div>
+		<div className="content-container-fluid not-found-page">
+			<div className="backdrop"></div>
+			<div className="app-info">
+				<h1 data-shadow='404!'>404!</h1>
+				<Link to="/">Go home</Link>
 			</div>
 		</div>
 		<Footer />
