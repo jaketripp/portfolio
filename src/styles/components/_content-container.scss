@@ -7,3 +7,18 @@
 		max-width: 90%;
 	}
 }
+
+.section {
+	width: 100%;
+	padding: 64px 0px;
+	margin: 0px;
+	h3 {
+		font-size: 3rem;
+		margin: 0 0 8px 0;
+	}
+}
+
+.section__secondary {
+	background: $secondary;
+	color: white;
+}
