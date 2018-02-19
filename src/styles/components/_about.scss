@@ -1,27 +1,20 @@
-.about__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    * {
-        padding-top: 8px;
-        flex: 1 1 450px;
-    }
-    @media (min-width: 1050px) {
-        .about__bio {
-            padding-right: 24px;
-        }
-        .about__languages {
-            padding-left: 24px;
-        }
+#about {
+    h3 {
+        font-weight: 900;
+		font-size: 4rem;
+		margin: 0 0 8px 0;
     }
     p {
         margin: 0;
         padding: 8px 0;
         font-size: 2.0rem;
         line-height: 1.4;
+        font-weight: 300;
+        strong {
+            font-weight: 600;
+        }
         @media (min-width: 700px) {
-            font-size: 2.5rem;
+            font-size: 3rem;
             line-height: 1.6;
         }
     }
