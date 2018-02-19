@@ -18,7 +18,7 @@ export default class Nav extends Component {
     render() {
         return (
             <div className="navbar">
-                <div className="content-container">
+                <div className="content-container-fluid">
                     <div className="navbar__content">
                         <div className="navbar-brand">
                             <Link className="navbar__title" to="/">
@@ -28,6 +28,7 @@ export default class Nav extends Component {
                         <div className="navbar-links">
                             <Link to="/">Home</Link>
                             <a href="/#about">About</a>
+                            <a href="/#skills">Skills</a>
                             <a href="/#work">Work</a>
                             <Link to="/contact">Contact</Link>
                         </div>
