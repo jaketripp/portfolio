@@ -27,8 +27,8 @@ export default class Nav extends Component {
                         </div>
                         <div className="navbar-links">
                             <Link to="/">Home</Link>
-                            <Link to="/">About</Link>
-                            <Link to="/">Work</Link>
+                            <a href="/#about">About</a>
+                            <a href="/#work">Work</a>
                             <Link to="/contact">Contact</Link>
                         </div>
                     </div>
@@ -54,3 +54,11 @@ export default class Nav extends Component {
 //         </Collapse>
 //     </Navbar>
 // </div>
+
+// you might need toggleNav & updateDocWidth function to change state:
+
+// this.state = {
+//     doc_width: document.body.clientWidth,
+//     show_nav: false
+// }
+// and add window.onresize = this.updateDocWidth before the return in render(), and all of rest is about rendering.
