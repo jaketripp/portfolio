@@ -1,15 +1,23 @@
-.bio {
-    padding: 30px 0;
-}
-
 .bio__content {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    > * {
-        flex: 1 1 50%;
-        width: 50%;
+    align-content: stretch;
+    flex-wrap: wrap;
+    .bio__image {
+        flex: 1 1 35%;
+    }
+
+    .bio__jumbo {
+        flex: 1 1 65%;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        h2 {
+            font-size: 90px;
+            line-height: 1;
+            margin: 0;
+        }
     }
 }
 
