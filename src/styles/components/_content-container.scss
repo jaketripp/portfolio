@@ -1,7 +1,7 @@
 .content-container {
 	margin: 0 auto;
 	padding: 0 $m-size;
-	width: 1200px;
+	width: 1000px;
 	max-width: 95%;
 	@media (min-width: 600px) {
 		max-width: 90%;
@@ -16,7 +16,7 @@
 
 .section {
 	width: 100%;
-	padding: 64px 104px;
+	padding: 64px 0px;
 	margin: 0px;
 }
 
