@@ -26,11 +26,7 @@ export default class Nav extends Component {
                             </Link>
                         </div>
                         <div className="navbar-links">
-                            <Link to="/">Home</Link>
-                            <a href="/#about">About</a>
-                            <a href="/#skills">Skills</a>
-                            <a href="/#work">Work</a>
-                            <Link to="/contact">Contact</Link>
+                            
                         </div>
                     </div>
                 </div>
