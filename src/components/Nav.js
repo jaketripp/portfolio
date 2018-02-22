@@ -1,20 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+const Menu = require('react-icons/lib/md/menu');
 
 export default class Nav extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
-            collapsed: true
+            collapsed: true,
+            height: '0px'
         };
     }
 
     toggleNavbar = () => {
+        let height;
+        // flip it around since you're calculating it before updating the state
+        if (!this.state.collapsed) {
+            height = '0px';
+        } else {
+            height = '288px'
+        }
         this.setState({
-            collapsed: !this.state.collapsed
+            collapsed: !this.state.collapsed,
+            height
         });
     }
+
     render() {
         return (
             <div className="navbar">
@@ -26,10 +36,27 @@ export default class Nav extends Component {
                             </Link>
                         </div>
                         <div className="navbar-links">
-                            
+
+                            <div className="links">
+                                <Link to="/">Home</Link>
+                                <a href="/#about">About</a>
+                                <a href="/#skills">Skills</a>
+                                <a href="/#work">Work</a>
+                                <Link to="/contact">Contact</Link>
+                            </div>
+
+                            <button className="icon" onClick={this.toggleNavbar}><Menu/></button>
                         </div>
                     </div>
                 </div>
+                <div className="mobile-navbar-links" style={{ height: this.state.height }}>
+                    <Link to="/">Home</Link>
+                    <a href="/#about">About</a>
+                    <a href="/#skills">Skills</a>
+                    <a href="/#work">Work</a>
+                    <Link to="/contact">Contact</Link>
+                </div>
+                
             </div>
         );
     }
