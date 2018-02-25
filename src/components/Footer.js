@@ -9,10 +9,10 @@ const Footer = () => (
         <div className="footer__content">
             <div className="footer__icons">
                 
-                <a href="https://github.com/jaketripp"><GitHubLogo /></a>
-                <a href="https://www.linkedin.com/in/jake-tripp/"><LinkedInLogo /></a>
-                <a href="https://medium.com/@jaketripp"><OldMediumLogo /></a>
-                <a href="https://www.facebook.com/jaketripp95"><FacebookLogo /></a>
+                <a href="https://github.com/jaketripp" aria-label="Github link"><GitHubLogo /></a>
+                <a href="https://www.linkedin.com/in/jake-tripp/" aria-label="LinkedIn link"><LinkedInLogo /></a>
+                <a href="https://medium.com/@jaketripp" aria-label="Medium link"><OldMediumLogo /></a>
+                <a href="https://www.facebook.com/jaketripp95" aria-label="Facebook link"><FacebookLogo /></a>
             </div>
             <div className="footer__copyright">
                 <p>Jake Tripp &copy; 2018</p>
