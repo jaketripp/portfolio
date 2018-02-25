@@ -6,23 +6,16 @@ export default class Nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            collapsed: true,
             height: '0px'
         };
     }
 
     toggleNavbar = () => {
-        let height;
-        // flip it around since you're calculating it before updating the state
-        if (!this.state.collapsed) {
-            height = '0px';
+        if (this.state.height === '0px') {
+            this.setState({ height: '288px' });
         } else {
-            height = '288px'
+            this.setState({ height: '0px' });
         }
-        this.setState({
-            collapsed: !this.state.collapsed,
-            height
-        });
     }
 
     render() {
@@ -45,7 +38,7 @@ export default class Nav extends Component {
                                 <Link to="/contact">Contact</Link>
                             </div>
 
-                            <button className="icon" onClick={this.toggleNavbar}><Menu/></button>
+                            <button className="icon" onClick={this.toggleNavbar} aria-label="Toggle nav bar"><Menu/></button>
                         </div>
                     </div>
                 </div>
@@ -61,28 +54,3 @@ export default class Nav extends Component {
         );
     }
 }
-
-// <div>
-//     <Navbar color="faded" light>
-//         <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
-//         <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-//         <Collapse isOpen={!this.state.collapsed} navbar>
-//             <Nav navbar>
-//                 <NavItem>
-//                     <NavLink href="/components/">Components</NavLink>
-//                 </NavItem>
-//                 <NavItem>
-//                     <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
-//                 </NavItem>
-//             </Nav>
-//         </Collapse>
-//     </Navbar>
-// </div>
-
-// you might need toggleNav & updateDocWidth function to change state:
-
-// this.state = {
-//     doc_width: document.body.clientWidth,
-//     show_nav: false
-// }
-// and add window.onresize = this.updateDocWidth before the return in render(), and all of rest is about rendering.
