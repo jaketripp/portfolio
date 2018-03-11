@@ -12,7 +12,6 @@ export default class Nav extends Component {
 
     toggleNavbar = () => {
         if (this.state.height === '0px') {
-            console.log(this);
             this.setState({ height: '288px' });
         } else {
             this.setState({ height: '0px' });
@@ -45,11 +44,11 @@ export default class Nav extends Component {
                     </div>
                 </div>
                 <div className="mobile-navbar-links" style={{ height: this.state.height }}>
-                    <Link to="/">Home</Link>
-                    <a href="/#about">About</a>
-                    <a href="/#skills">Skills</a>
-                    <a href="/#work">Work</a>
-                    <Link to="/#contact">Contact</Link>
+                    <Link to="/" onClick={this.toggleNavbar}>Home</Link>
+                    <a href="/#about" onClick={this.toggleNavbar}>About</a>
+                    <a href="/#skills" onClick={this.toggleNavbar}>Skills</a>
+                    <a href="/#work" onClick={this.toggleNavbar}>Work</a>
+                    <a href="/#contact" onClick={this.toggleNavbar}>Contact</a>
                 </div>
 
             </div>
