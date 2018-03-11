@@ -5,16 +5,16 @@ const OldMediumLogo = require('react-icons/lib/fa/medium');
 const GitHubLogo = require('react-icons/lib/fa/github');
 
 const Footer = () => (
-    <div className="footer">
+    <div className="footer" id="contact">
         <div className="footer__content">
             <div className="footer__icons">
-                
                 <a href="https://github.com/jaketripp" aria-label="Github link"><GitHubLogo /></a>
                 <a href="https://www.linkedin.com/in/jake-tripp/" aria-label="LinkedIn link"><LinkedInLogo /></a>
                 <a href="https://medium.com/@jaketripp" aria-label="Medium link"><OldMediumLogo /></a>
                 <a href="https://www.facebook.com/jaketripp95" aria-label="Facebook link"><FacebookLogo /></a>
             </div>
             <div className="footer__copyright">
+                <p><a href="mailto:jake@jaketripp.com">jake@jaketripp.com</a></p>
                 <p>Jake Tripp &copy; 2018</p>
             </div>
         </div>
