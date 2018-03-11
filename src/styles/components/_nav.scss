@@ -1,5 +1,16 @@
 .navbar {
   background: $main;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 111111111;
+  .content-container-fluid {
+    padding: 0 8px;
+    @media (min-width: 450px) {
+      padding: 0 3.2rem;
+    }
+  }
 }
 
 .navbar__content {
@@ -9,13 +20,23 @@
   padding: $s-size 0;
 }
 
+.navbar-brand {
+  width: 304px;
+}
+
 .navbar__title {
+  align-items: center;
   color: white;
+  display: flex;
   text-decoration: none;
   h1 {
     margin: 0;
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1.4;
+  }
+  img {
+    height: 64px;
+    margin-right: 4px;
   }
 }
 
@@ -75,14 +96,3 @@
     display: none;
   }
 }
-
-
-//   .navbar-links.responsive a {
-//     float: none;
-//     display: block;
-//     text-align: center;
-//   }
-//   .navbar-links.responsive {
-//     flex-direction: column;
-//   }
-// }

@@ -12,6 +12,7 @@ export default class Nav extends Component {
 
     toggleNavbar = () => {
         if (this.state.height === '0px') {
+            console.log(this);
             this.setState({ height: '288px' });
         } else {
             this.setState({ height: '0px' });
@@ -25,7 +26,8 @@ export default class Nav extends Component {
                     <div className="navbar__content">
                         <div className="navbar-brand">
                             <Link className="navbar__title" to="/">
-                                <h1>Jake Tripp</h1>
+                                <img src="/images/jt_logo.svg" alt="Jake Tripp Logo" />
+                                <h1>JAKE TRIPP</h1>
                             </Link>
                         </div>
                         <div className="navbar-links">
@@ -35,10 +37,10 @@ export default class Nav extends Component {
                                 <a href="/#about">About</a>
                                 <a href="/#skills">Skills</a>
                                 <a href="/#work">Work</a>
-                                <Link to="/contact">Contact</Link>
+                                <a href="/#contact">Contact</a>
                             </div>
 
-                            <button className="icon" onClick={this.toggleNavbar} aria-label="Toggle nav bar"><Menu/></button>
+                            <button className="icon" onClick={this.toggleNavbar} aria-label="Toggle nav bar"><Menu /></button>
                         </div>
                     </div>
                 </div>
@@ -47,9 +49,9 @@ export default class Nav extends Component {
                     <a href="/#about">About</a>
                     <a href="/#skills">Skills</a>
                     <a href="/#work">Work</a>
-                    <Link to="/contact">Contact</Link>
+                    <Link to="/#contact">Contact</Link>
                 </div>
-                
+
             </div>
         );
     }
