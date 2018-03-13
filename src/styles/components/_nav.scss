@@ -30,7 +30,7 @@
     line-height: 1.4;
   }
   img {
-    height: 64px;
+    height: 56px;
     margin-right: 4px;
   }
 }
@@ -54,12 +54,19 @@
   display: flex;
   flex-direction: column;
   transition: 0.4s ease;
+  overflow-y: hidden;
+  &.collapsed {
+    height: 0;
+  }
+  &.expanded {
+    height: 288px;
+  }
   a {
     color: white;
     text-decoration: none;
     margin: 0;
     padding: 16px;
-    transition: 0.8s ease;
+    transition: 0.3s ease;
     text-align: center;
     &:hover {
       background: rgba(255,255,255,0.1);
