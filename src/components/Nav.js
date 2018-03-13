@@ -6,16 +6,12 @@ export default class Nav extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            height: '0px'
+            collapsed: true
         };
     }
 
     toggleNavbar = () => {
-        if (this.state.height === '0px') {
-            this.setState({ height: '288px' });
-        } else {
-            this.setState({ height: '0px' });
-        }
+        this.setState({ collapsed: !this.state.collapsed });
     }
 
     render() {
@@ -43,14 +39,13 @@ export default class Nav extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="mobile-navbar-links" style={{ height: this.state.height }}>
+                <div className={`mobile-navbar-links ${this.state.collapsed ? 'collapsed' : 'expanded'}`}>
                     <Link to="/" onClick={this.toggleNavbar}>Home</Link>
                     <a href="/#about" onClick={this.toggleNavbar}>About</a>
                     <a href="/#skills" onClick={this.toggleNavbar}>Skills</a>
                     <a href="/#work" onClick={this.toggleNavbar}>Work</a>
                     <a href="/#contact" onClick={this.toggleNavbar}>Contact</a>
                 </div>
-
             </div>
         );
     }
