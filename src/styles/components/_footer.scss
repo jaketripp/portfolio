@@ -1,5 +1,5 @@
 .footer {
-    height: 128px;
+    height: 200px;
     background: $main;
     color: white;
     display: flex;
@@ -8,6 +8,13 @@
     position: absolute;
     left: 0;
     right: 0;
+    .footer__copyright a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 .footer__content {
@@ -24,6 +31,6 @@
 }
 
 .footer__copyright p {
-    margin: 8px 0 0;
+    margin: 24px 0 0;
     letter-spacing: 1.5px;
 }
