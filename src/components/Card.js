@@ -67,7 +67,7 @@ class Card extends Component {
                     height={'100%'}
                     placeholder={<Placeholder src={this.state.data.logo} />}
                     once
-                    offset={300}
+                    offset={600}
                 >
                     <img src={`/images/${this.state.data.logo}`} alt={`${this.state.data.title} logo`} className="image" />
                 </LazyLoad>
