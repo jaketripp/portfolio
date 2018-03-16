@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Radium from 'radium';
 const RadiumLink = Radium(Link);
+import LazyLoad from 'react-lazyload';
+import Placeholder from './Placeholder';
 
 class Card extends Component {
     constructor(props) {
@@ -61,7 +63,14 @@ class Card extends Component {
 
         return (
             <div className="card" style={cardStyle} onMouseEnter={() => this.removeBlock()} onMouseLeave={() => this.restoreBlock()} onMouseUp={() => this.removeBlock()}>
-                <img src={this.state.data.logo} alt={`${this.state.data.title} logo`} className="image" />
+                <LazyLoad
+                    height={'100%'}
+                    placeholder={<Placeholder src={this.state.data.logo} />}
+                    once
+                    offset={300}
+                >
+                    <img src={`/images/${this.state.data.logo}`} alt={`${this.state.data.title} logo`} className="image" />
+                </LazyLoad>
                 <div className="overlay" style={overlayStyle}>
                     <h3>{this.state.data.title}</h3>
                     <div className="text">

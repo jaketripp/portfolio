@@ -25,7 +25,8 @@
         img {
             width: 100%;
             display: block;
-            height: auto;
+            // height: auto;
+            transition: 5s;
         }
         .gradient {
             background: linear-gradient(rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 59%, rgba(255, 255, 255, 0.9) 100%);

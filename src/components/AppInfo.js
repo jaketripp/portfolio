@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Radium from 'radium';
-
+import LazyLoad from 'react-lazyload';
+import Placeholder from './Placeholder';
 import { techObj } from '../data/tech';
 
 export const AppInfo = ({ app }) => {
@@ -21,7 +22,13 @@ export const AppInfo = ({ app }) => {
                 <h1 style={{ color: app.style.backgroundColor }}>{app.title}</h1>
                 <div className="content">
                     <div className="screenshot">
-                        <img src={app.screenshot} alt={`${app.title} screenshot`} />
+                        <LazyLoad 
+                            height={'100%'} 
+                            placeholder={<Placeholder src={app.screenshot} />}
+                            once
+                        >
+                            <img src={`/images/${app.screenshot}`} alt={`${app.title} screenshot`} />
+                        </LazyLoad> 
                         <a href={app.demoURL}><div className="gradient"></div></a>
                     </div>
                     <div className="text">
