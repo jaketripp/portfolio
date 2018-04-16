@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 const Menu = require('react-icons/lib/md/menu');
 
 export default class Nav extends Component {
@@ -29,10 +30,10 @@ export default class Nav extends Component {
 
                             <div className="links">
                                 <Link to="/">Home</Link>
-                                <a href="/#about">About</a>
-                                <a href="/#skills">Skills</a>
-                                <a href="/#work">Work</a>
-                                <a href="/#contact">Contact</a>
+                                <Link to="/#about">About</Link>
+                                <Link to="/#skills">Skills</Link>
+                                <Link to="/#work">Work</Link>
+                                <Link to="/#contact">Contact</Link>
                             </div>
 
                             <button className="icon" onClick={this.toggleNavbar} aria-label="Toggle nav bar"><Menu /></button>
@@ -40,11 +41,11 @@ export default class Nav extends Component {
                     </div>
                 </div>
                 <div className={`mobile-navbar-links ${this.state.collapsed ? 'collapsed' : 'expanded'}`}>
-                    <Link to="/" onClick={this.toggleNavbar}>Home</Link>
-                    <a href="/#about" onClick={this.toggleNavbar}>About</a>
-                    <a href="/#skills" onClick={this.toggleNavbar}>Skills</a>
-                    <a href="/#work" onClick={this.toggleNavbar}>Work</a>
-                    <a href="/#contact" onClick={this.toggleNavbar}>Contact</a>
+                    <Link to="/">Home</Link>
+                    <Link to="/#about">About</Link>
+                    <Link to="/#skills">Skills</Link>
+                    <Link to="/#work">Work</Link>
+                    <Link to="/#contact">Contact</Link>
                 </div>
             </div>
         );
