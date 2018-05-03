@@ -24,6 +24,7 @@
 }
 
 .card {
+    cursor: pointer;
     font-family: 'Helvetica Neue'; 
     @include flex-wrap-fix(300px);
     position: relative;
@@ -78,6 +79,7 @@
 }
 
 a.card__links__button {
+    cursor: pointer;
     margin: 8px auto;
     width: 100%;
     font-size: 20px;
