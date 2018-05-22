@@ -23,7 +23,7 @@ export default class Nav extends Component {
                         <div className="navbar-brand">
                             <Link className="navbar__title" to="/">
                                 <img src="/images/jt_logo.svg" alt="Jake Tripp Logo" />
-                                <h1>JAKE TRIPP</h1>
+                                <h1>Jake Tripp</h1>
                             </Link>
                         </div>
                         <div className="navbar-links">
