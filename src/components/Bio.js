@@ -6,9 +6,9 @@ export const Bio = () => (
         <div className="content-container">
             <div className="bio__content">
                 <div className="bio__image">
-                    <img src="/images/pizza.jpg" alt="Me with some great 'za" />
+                    <img src="/images/me.jpg" alt="Me (Jake Tripp)" />
                 </div>
-                <div className="bio__jumbor">
+                <div className="bio__jumbo">
                     <h2>FULL.</h2>
                     <h2>STACK.</h2>
                     <h2>DEVELOPER.</h2> 
