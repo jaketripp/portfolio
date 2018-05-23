@@ -8,7 +8,6 @@ import Placeholder from './Placeholder';
 class Card extends Component {
     constructor(props) {
         super(props);
-        // console.log(props);
         this.state = {
             blockStyle: {
                 'display': 'block'
