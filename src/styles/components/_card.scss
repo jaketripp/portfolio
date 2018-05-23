@@ -25,7 +25,6 @@
 
 .card {
     cursor: pointer;
-    font-family: 'Helvetica Neue'; 
     @include flex-wrap-fix(300px);
     position: relative;
     &:hover .overlay {
