@@ -5,7 +5,7 @@
   "author": "Jake Tripp",
   "license": "MIT",
   "scripts": {
-    "build:dev": "webpack",
+    "build:dev": "webpack --watch",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "test": "cross-env NODE_ENV=test jest --config=jest.config.json",
