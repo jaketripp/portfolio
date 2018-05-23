@@ -8,6 +8,7 @@ import Placeholder from './Placeholder';
 class Card extends Component {
     constructor(props) {
         super(props);
+        // console.log(props);
         this.state = {
             blockStyle: {
                 'display': 'block'
@@ -65,7 +66,7 @@ class Card extends Component {
             <div className="card" style={cardStyle} onMouseEnter={() => this.removeBlock()} onMouseLeave={() => this.restoreBlock()} onMouseUp={() => this.removeBlock()}>
                 <LazyLoad
                     height={'100%'}
-                    placeholder={<Placeholder src={this.state.data.logo} />}
+                    placeholder={<Placeholder src={this.state.data.logo} dataAlt={this.state.data.title} />}
                     once
                     offset={600}
                 >
