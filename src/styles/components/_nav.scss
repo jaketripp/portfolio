@@ -30,7 +30,8 @@
     line-height: 1.4;
   }
   img {
-    height: 56px;
+    max-height: 56px;
+    max-width: 56px;
     margin-right: 4px;
   }
 }
