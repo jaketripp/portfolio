@@ -94,7 +94,19 @@ const techObj = {
     'passport': {
         logo: '/images/tech/passport.svg',
         name: 'Passport.js'
-    }
+    },
+    'mocha': {
+        logo: '/images/tech/mocha.svg',
+        name: 'Mocha'
+    },
+    'chai': {
+        logo: '/images/tech/chai.svg',
+        name: 'Chai'
+    },
+    'selenium': {
+        logo: '/images/tech/selenium.svg',
+        name: 'Selenium'
+    },
 };
 
 module.exports = { techObj };
