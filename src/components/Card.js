@@ -78,7 +78,7 @@ class Card extends Component {
                         <div className="block" style={this.state.blockStyle}></div>
 
                         <a className="card__links__button" style={btnStyle} key={this.state.data.demoURL} href={this.state.data.demoURL}>Demo</a>
-                        <a className="card__links__button" style={btnStyle} key={this.state.data.githubURL} href={this.state.data.githubURL}>GitHub</a>
+                        {this.state.data.githubURL !== 'N/A' && <a className="card__links__button" style={btnStyle} key={this.state.data.githubURL} href={this.state.data.githubURL}>GitHub</a>}
                         <RadiumLink className="card__links__button" style={btnStyle} to={`/about/${this.state.data.infoURLName}`}>More Info</RadiumLink>
                     </div>
                 </div>

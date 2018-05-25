@@ -37,7 +37,7 @@ export const AppInfo = ({ app, prevHref, nextHref }) => {
                     <div className="text">
                         <div className="buttons">
                             <a className="card__links__button" style={btnStyle} key={app.demoURL} href={app.demoURL}>Demo</a>
-                            <a className="card__links__button" style={btnStyle} key={app.githubURL} href={app.githubURL}>GitHub</a>
+                            {app.githubURL !== 'N/A' && <a className="card__links__button" style={btnStyle} key={app.githubURL} href={app.githubURL}>GitHub</a>}
                         </div>
                         <div className="app-info__description">
                             <p><strong>Description: </strong>{app.description}</p>
