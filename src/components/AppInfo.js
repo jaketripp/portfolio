@@ -4,8 +4,11 @@ import Radium from 'radium';
 import LazyLoad from 'react-lazyload';
 import Placeholder from './Placeholder';
 import { techObj } from '../data/tech';
+const PrevButton = require('react-icons/lib/md/keyboard-arrow-left');
+const NextButton = require('react-icons/lib/md/keyboard-arrow-right');
 
-export const AppInfo = ({ app }) => {
+
+export const AppInfo = ({ app, prevHref, nextHref }) => {
     const btnStyle = {
         background: app.style.color,
         color: app.style.backgroundColor,
@@ -58,6 +61,20 @@ export const AppInfo = ({ app }) => {
                                 })
                             }
                         </div>
+                    </div>
+                </div>
+                <div className="nextOrPrev">
+                    <div className="prev">
+                        <Link to={`/about/${prevHref}`}>
+                            <PrevButton />
+                            <span>Previous</span>
+                        </Link>
+                    </div>
+                    <div className="next">
+                        <Link to={`/about/${nextHref}`}>
+                            <span>Next</span>
+                            <NextButton />
+                        </Link>
                     </div>
                 </div>
             </div>
