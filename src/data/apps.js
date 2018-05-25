@@ -1,4 +1,38 @@
 const apps = {
+    'elderdata': {
+        title: 'Elder Data',
+        style: {
+            color: '#ffffff',
+            backgroundColor: '#45a3cf'
+        },
+        logo: 'cards/elderdata.jpg',
+        demoURL: 'http://elderdata.shimberg.ufl.edu/',
+        infoURLName: 'elderdata',
+        githubURL: 'N/A',
+        techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap", "mocha", "chai", "selenium"],
+        screenshot: 'screenshots/elderdata.png',
+        description: "A",
+        why: "A",
+        coolFeature: "A",
+        date: 'February 2018'
+    },
+    'distillr': {
+        title: 'Distillr',
+        style: {
+            color: '#ffffff',
+            backgroundColor: '#8fce47'
+        },
+        logo: 'cards/distillr.png',
+        demoURL: 'http://jaketripp-distillr.herokuapp.com/',
+        infoURLName: 'distillr',
+        githubURL: 'https://github.com/jaketripp/via',
+        techList: ['react', 'node', 'webpack', 'express', 'es6', 'babel', "momentjs"],
+        screenshot: 'screenshots/distillr.png',
+        description: "Distillr helps you get where you want using a VIA bus. It takes in some info like your current address (or any address in San Antonio), the amount of money you are willing to spend, start and end times, and a search word. It then returns a list of options of places you could go, with their Yelp ratings, expected cost, estimated time, listed phone numbers, and most importantly a dynamic bus route that will take you to VIA's web app with all of the necessary info already populated.",
+        why: "My friend and teammate, Kia, told me about the VIA 2018 Codeathon and it sounded like a great opportunity to participate in. We had been wanting to work together because we thought our skillsets would compliment each other. It also sounded more satisfying and convenient because the problems were local problems. It’s 2018, we make more decisions every single day than arguably any other time in history. Decisions are hard, and time is precious.  Distillr makes decision making easy.",
+        coolFeature: "Kia and I worked fast and went from not even an idea to a deployed product in one weekend. He worked on the backend of Distillr, while I worked on the frontend using React. I take pride in the fact that I think Distillr has a really clean interface and an intuitive user experience.",
+        date: 'February 2018'
+    },
     'musicmaster': {
         title: 'Music Master',
         style: {

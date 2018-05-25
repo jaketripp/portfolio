@@ -1,5 +1,23 @@
 const projectList = [
     {
+        title: 'Elder Data',
+        color: '#ffffff',
+        backgroundColor: '#45a3cf',
+        logo: '/images/elderdata.jpg',
+        demoURL: 'http://elderdata.shimberg.ufl.edu/',
+        infoURLName: 'elderdata',
+        githubURL: 'N/A',
+    },
+    {
+        title: 'Distillr',
+        color: '#ffffff',
+        backgroundColor: '#8fce47',
+        logo: '/images/distillr.png',
+        demoURL: 'http://jaketripp-distillr.herokuapp.com/',
+        infoURLName: 'distillr',
+        githubURL: 'https://github.com/jaketripp/via',
+    },
+    {
         title: 'Music Master',
         color: '#ffffff',
         backgroundColor: '#2c5b61',
