@@ -11,9 +11,9 @@ const apps = {
         githubURL: 'N/A',
         techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap", "mocha", "chai", "selenium"],
         screenshot: 'screenshots/elderdata.png',
-        description: "A",
-        why: "A",
-        coolFeature: "A",
+        description: "Housing Florida’s Older Adults: By the Numbers, referred to as Elder Data by my team and I, is a web app made by the Shimberg Center focused on providing data on housing the elderly in the state of Florida.",
+        why: "Elder Data is the first project I worked on for the Shimberg Center. We were redoing the existing site from the ground up (most of which was written in Perl). Since we are a small team, I was the lead developer, which was a really cool experience. Because the repository is private on GitHub, unfortunately I can't share any code.",
+        coolFeature: "Two requirements of the site were to have an autocomplete input field and a clickable map for the various counties in Florida. I had an idea to wire them together so that as you type in the autocomplete, the results list that matches your search also highlights the corresponding places on the map. I used JavaScript's MutationObserver API to accomplish this. Another thing I'm proud of is I learned and set up Webpack entirely on my own to minify, bundle, and compress assets - which led to an enormous page speed boost.",
         date: 'February 2018'
     },
     'distillr': {
