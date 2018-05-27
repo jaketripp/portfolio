@@ -30,10 +30,10 @@ export default class Nav extends Component {
 
                             <div className="links">
                                 <Link to="/">Home</Link>
-                                <Link to="/#about">About</Link>
-                                <Link to="/#skills">Skills</Link>
-                                <Link to="/#work">Work</Link>
-                                <Link to="/#contact">Contact</Link>
+                                <Link to="/#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>About</Link>
+                                <Link to="/#skills" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Skills</Link>
+                                <Link to="/#work" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Work</Link>
+                                <Link to="/#contact" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Contact</Link>
                             </div>
 
                             <button className="icon" onClick={this.toggleNavbar} aria-label="Toggle nav bar"><Menu /></button>
@@ -42,10 +42,10 @@ export default class Nav extends Component {
                 </div>
                 <div className={`mobile-navbar-links ${this.state.collapsed ? 'collapsed' : 'expanded'}`}>
                     <Link to="/">Home</Link>
-                    <Link to="/#about">About</Link>
-                    <Link to="/#skills">Skills</Link>
-                    <Link to="/#work">Work</Link>
-                    <Link to="/#contact">Contact</Link>
+                    <Link to="/#about" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>About</Link>
+                    <Link to="/#skills" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Skills</Link>
+                    <Link to="/#work" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Work</Link>
+                    <Link to="/#contact" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Contact</Link>
                 </div>
             </div>
         );
