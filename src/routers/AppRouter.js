@@ -1,5 +1,6 @@
 import React from 'react';
-import { Router, Route, Switch, Link, NavLink } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import createHistory from 'history/createBrowserHistory';
 
 import HomePage from '../components/HomePage';
@@ -10,17 +11,17 @@ import ScrollToTop from '../components/ScrollToTop';
 export const history = createHistory();
 
 const AppRouter = () => (
-  <Router history={history}>
+  <BrowserRouter history={history}>
     <ScrollToTop>
       <div>
         <Switch>
-          <Route path="/" component={HomePage} exact={true} />
+          <Route exact path="/" component={HomePage} />
           <Route path="/about/:name" component={AppInfoPage} />
           <Route component={NotFoundPage} />
         </Switch>
       </div>
     </ScrollToTop>
-  </Router>
+  </BrowserRouter>
 );
 
 
