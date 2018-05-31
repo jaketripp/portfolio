@@ -15,7 +15,7 @@
     h1 {
         color: white;
         font-size: 14rem; 
-        text-shadow: .03em .03em 0 #4d5eb3;
+        text-shadow: .03em .03em 0 $green;
         line-height: 1;
         position: relative
 
@@ -46,7 +46,7 @@
 }
   
 .backdrop {
-    background: #4D5EB3;
+    background: $green;
     position: absolute;
     top: 0;
     right: 0;
