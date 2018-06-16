@@ -91,7 +91,7 @@ const apps = {
             backgroundColor: '#184860'
         },
         logo: 'cards/asoftoday.jpg',
-        demoURL: 'http://asoftoday.me',
+        demoURL: 'https://jaketripp.github.io/asoftoday/',
         infoURLName: 'asoftoday',
         githubURL: 'https://github.com/jaketripp/asoftoday',
         techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery', 'modernizr'],
