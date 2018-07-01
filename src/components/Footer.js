@@ -1,9 +1,10 @@
 import React from 'react';
-const FacebookLogo = require('react-icons/lib/fa/facebook');
+const YouTubeLogo = require('react-icons/lib/fa/youtube');
 const LinkedInLogo = require('react-icons/lib/fa/linkedin');
 const OldMediumLogo = require('react-icons/lib/fa/medium');
 const GitHubLogo = require('react-icons/lib/fa/github');
 const Envelope = require('react-icons/lib/fa/envelope');
+const SoundCloudLogo = require('react-icons/lib/fa/soundcloud');
 
 const Footer = () => (
     <div className="section section__secondary footer" id="contact">
@@ -14,8 +15,9 @@ const Footer = () => (
                     <a href="https://github.com/jaketripp" aria-label="GitHub link" title="GitHub"><GitHubLogo /></a>
                     <a href="https://www.linkedin.com/in/jake-tripp/" aria-label="LinkedIn link" title="LinkedIn"><LinkedInLogo /></a>
                     <a href="https://medium.com/@jaketripp" aria-label="Medium link" title="Medium"><OldMediumLogo /></a>
-                    <a href="https://www.facebook.com/jaketripp95" aria-label="Facebook link" title="Facebook"><FacebookLogo /></a>
                     <a href="mailto:jake@jaketripp.com" aria-label="Email link" title="jake@jaketripp.com"><Envelope /></a>
+                    <a href="https://www.youtube.com/channel/UCGWw6-QNLp_vAIRn1ANGh9g?view_as=subscriber" aria-label="YouTube link" title="YouTube"><YouTubeLogo /></a>
+                    <a href="https://soundcloud.com/the-jake-tripp" aria-label="SoundCloud link" title="SoundCloud"><SoundCloudLogo /></a>
                 </div>
                 <div className="footer__copyright">
                     <p>Jake Tripp &copy; 2018</p>
