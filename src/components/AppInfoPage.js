@@ -5,10 +5,10 @@ import AppInfo from './AppInfo';
 import Nav from './Nav';
 import NotFoundPage from './NotFoundPage';
 import { apps } from '../data/apps';
-import { projectList } from '../data/projectList';
 
 const AppInfoPage = (props) => {
     const appName = props.match.params.name;
+    const projectList = Object.keys(apps);
     let { prevHref, nextHref } = getPrevAndNext(projectList, appName);
 
     if (!!apps[appName]) {
@@ -27,13 +27,13 @@ const AppInfoPage = (props) => {
 }
 
 function getPrevAndNext(projectList, appName) {
-    const currentProjectIndex = projectList.findIndex(project => project.infoURLName === appName);
+    const currentProjectIndex = projectList.findIndex(project => project === appName);
 
     let nextIndex = projectList[currentProjectIndex + 1] ? currentProjectIndex + 1 : 0;
-    let nextHref = projectList[nextIndex].infoURLName;
+    let nextHref = projectList[nextIndex];
 
     let prevIndex = projectList[currentProjectIndex - 1] ? currentProjectIndex - 1 : projectList.length - 1;
-    let prevHref = projectList[prevIndex].infoURLName;
+    let prevHref = projectList[prevIndex];
 
     return { prevHref, nextHref };
 }
