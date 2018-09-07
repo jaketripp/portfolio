@@ -1,4 +1,21 @@
 const apps = {
+    'clearinghouse': {
+        title: 'Florida Housing Data Clearinghouse',
+        style: {
+            color: '#ffffff',
+            backgroundColor: '#105f84'
+        },
+        logo: 'cards/clearinghouse.png',
+        demoURL: 'http://flhousingdata.shimberg.ufl.edu/',
+        infoURLName: 'clearinghouse',
+        githubURL: 'N/A',
+        techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap", "mocha", "chai", "selenium"],
+        screenshot: 'screenshots/clearinghouse2.png',
+        description: "Florida Housing Data Clearinghouse, the 2nd web app I worked on with the Shimberg Center, provides considerable data on Florida's housing.",
+        why: "We remade the existing site - we removed unnecessary features, added new features, and improved the user experience and interface.",
+        coolFeature: "The Assisted Housing Inventory is the most complex part of our web app. It produces a large table that can be filtered by various criteria. We wanted to make the URLs dynamic so that a user could share a link where the filters would automatically be applied. My approach was to add the filters to the URL when the form was submitted, and then parse the URL and automatically fill the form in accordingly (to keep the table and the currently applied filters in sync).",
+        date: 'June 2018'
+    },
     'elderdata': {
         title: 'Elder Data',
         style: {
@@ -11,8 +28,8 @@ const apps = {
         githubURL: 'N/A',
         techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap", "mocha", "chai", "selenium"],
         screenshot: 'screenshots/elderdata.png',
-        description: "Housing Florida’s Older Adults: By the Numbers, referred to as Elder Data by my team and I, is a web app made by the Shimberg Center focused on providing data on housing the elderly in the state of Florida.",
-        why: "Elder Data is the first project I worked on for the Shimberg Center. We were redoing the existing site from the ground up (most of which was written in Perl). Since we are a small team, I was the lead developer, which was a really cool experience. Because the repository is private on GitHub, unfortunately I can't share any code.",
+        description: "Housing Florida’s Older Adults: By the Numbers (referred to as Elder Data by my team and I) is the 1st web app I worked on with the Shimberg Center. The app provides data on housing the elderly in Florida.",
+        why: "We remade the existing site (most of which was written in Perl). Since we were such a small team, I was the lead developer - which was a really cool experience.",
         coolFeature: "Two requirements of the site were to have an autocomplete input field and a clickable map for the various counties in Florida. I had an idea to wire them together so that as you type in the autocomplete, the results list that matches your search also highlights the corresponding places on the map. I used JavaScript's MutationObserver API to accomplish this. Another requirement was that the site had to be 508 compliant, which was a challenge initially. But I'm proud of the fact that the app we made is accessible to all. One final thing I'm proud of is I learned and set up Webpack entirely on my own to minify, bundle, and compress assets - which led to an enormous page speed boost.",
         date: 'February 2018'
     },

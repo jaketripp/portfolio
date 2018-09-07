@@ -1,5 +1,14 @@
 const projectList = [
   {
+    title: "Florida Housing Data Clearinghouse",
+    color: "#ffffff",
+    backgroundColor: "#105f84",
+    logo: "/images/clearinghouse.png",
+    demoURL: "http://flhousingdata.shimberg.ufl.edu/",
+    infoURLName: "clearinghouse",
+    githubURL: "N/A"
+  },
+  {
     title: "Elder Data",
     color: "#ffffff",
     backgroundColor: "#45a3cf",
