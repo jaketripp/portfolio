@@ -10,7 +10,7 @@ const apps = {
         infoURLName: 'clearinghouse',
         githubURL: 'N/A',
         techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap", "mocha", "chai", "selenium"],
-        screenshot: 'screenshots/clearinghouse2.png',
+        screenshot: 'screenshots/clearinghouse.png',
         description: "Florida Housing Data Clearinghouse, the 2nd web app I worked on with the Shimberg Center, provides considerable data on Florida's housing.",
         why: "We remade the existing site - we removed unnecessary features, added new features, and improved the user experience and interface.",
         coolFeature: "The Assisted Housing Inventory is the most complex part of our web app. It produces a large table that can be filtered by various criteria. We wanted to make the URLs dynamic so that a user could share a link where the filters would automatically be applied. My approach was to add the filters to the URL when the form was submitted, and then parse the URL and automatically fill the form in accordingly (to keep the table and the currently applied filters in sync).",
