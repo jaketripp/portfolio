@@ -159,7 +159,7 @@ const apps = {
             backgroundColor: '#476D36'
         },
         logo: 'cards/clock.jpg',
-        demoURL: 'https://jaketripp-countdown-champ.herokuapp.com/',
+        demoURL: 'https://jaketripp.github.io/countdown-champ/',
         infoURLName: 'countdownchamp',
         githubURL: 'https://github.com/jaketripp/countdown-champ',
         techList: ['react', 'node', 'webpack', 'es6', 'babel', 'css-3', 'bootstrap'],
