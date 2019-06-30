@@ -22,7 +22,7 @@ const Footer = () => (
                     <a href="https://www.instagram.com/thejaketripp/" aria-label="Instagram link" title="Instagram"><InstagramLogo /></a>
                 </div>
                 <div className="footer__copyright">
-                    <p>Jake Tripp &copy; 2018</p>
+                    <p>Jake Tripp &copy; {new Date().getFullYear()}</p>
                 </div>
             </div>
         </div>

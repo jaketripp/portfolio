@@ -16,6 +16,23 @@ const apps = {
     //     coolFeature: "The original about page had a timeline that listed significant points in time for the Shimberg Center. I thought the timeline was a cool idea, so I gave it a major refresh: I added some color, I cleaned up the look of it, and it's now responsive on all screen sizes (try viewing it on different screen sizes, the whole layout of it changes!).",
     //     date: 'August 2018'
     // },
+    'quickcopy': {
+        title: 'Quick Copy',
+        style: {
+            color: '#ffffff',
+            backgroundColor: '#2979ff'
+        },
+        logo: 'cards/quickcopy.png',
+        demoURL: 'https://jaketripp.github.io/quick-copy/',
+        infoURLName: 'quickcopy',
+        githubURL: 'https://github.com/jaketripp/quick-copy',
+        techList: ['react', 'node', 'webpack', 'babel', 'es6', 'sass', 'material-ui', 'javascript', 'css-3', 'html-5'],
+        screenshot: 'screenshots/quickcopy.png',
+        description: "Ever have to copy a lot of lines individually to other places? Ever think you pressed CMD+C to find out you, in fact, did not? Ever lose your place and forget what you just copied? Cut out half the work with Quick Copy. Paste in a blob of text and it creates blocks that copy their content to your clipboard when clicked and then disappear!",
+        why: "I had run into the annoying scenario too many times where I had to copy and paste a lot of hard-to-distinguish things (think serial numbers, long URLs, etc) and thought that there had to be a better way.",
+        coolFeature: "I realize Quick Copy is a pretty niche application - you might never need it - but the handful of times I've had a need for it it has been an absolute joy to use. One feature I really like is the fact that I allow the user to decide what to split the data by. This was also my first time working with Service Workers - try accessing the app with no internet to see what I mean!",
+        date: 'June 2019'
+    },
     'clearinghouse': {
         title: 'Florida Housing Data Clearinghouse',
         style: {

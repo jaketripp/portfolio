@@ -107,6 +107,11 @@ const techObj = {
         logo: '/images/tech/selenium.svg',
         name: 'Selenium'
     },
+    'material-ui': {
+        logo: '/images/tech/material-ui.svg',
+        name: 'Material-UI'
+    }
+    
 };
 
 module.exports = { techObj };
