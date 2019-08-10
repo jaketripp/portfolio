@@ -16,6 +16,23 @@ const apps = {
         coolFeature: "The original About Page had a timeline that listed significant points in time for the Shimberg Center. I thought the timeline was a cool idea, so I gave it a major refresh: I added some color, I cleaned up the UI, and it's now responsive on all screen sizes (try viewing it on different screen sizes, the whole layout of it changes!).",
         date: 'July 2019'
     },
+    'colorgrid': {
+        title: 'Color Grid',
+        style: {
+            color: '#ffffff',
+            backgroundColor: '#2979ff'
+        },
+        logo: 'cards/colorgrid.png',
+        demoURL: 'https://jaketripp.github.io/color-grid/',
+        infoURLName: 'colorgrid',
+        githubURL: 'https://github.com/jaketripp/color-grid',
+        techList: ['react', 'node', 'webpack', 'babel', 'es6', 'sass', 'material-ui', 'javascript', 'css-3', 'html-5'],
+        screenshot: 'screenshots/colorgrid.png',
+        description: "",
+        why: "",
+        coolFeature: "",
+        date: 'July 2019'
+    },
     'quickcopy': {
         title: 'Quick Copy',
         style: {
