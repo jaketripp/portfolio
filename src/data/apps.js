@@ -1,21 +1,21 @@
 const apps = {
-    // 'shimberg': {
-    //     title: 'Shimberg Center Website',
-    //     style: {
-    //         color: '#ffffff',
-    //         backgroundColor: '#053565'
-    //     },
-    //     logo: 'cards/shimberg.png',
-    //     demoURL: 'http://flhousingdata.shimberg.ufl.edu/',
-    //     infoURLName: 'shimberg',
-    //     githubURL: 'N/A',
-    //     techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap", "mocha", "chai", "selenium"],
-    //     screenshot: 'screenshots/shimberg.png',
-    //     description: "The Shimberg Center website is the 3rd and final project I worked on with the Shimberg Center.",
-    //     why: "The site was in dire need of an update: I removed unnecessary files and redundancy from the codebase, I made the site fully responsive on all screen sizes, I standardized the routing, and I added minification, bundling, and compression to speed up the page load times.",
-    //     coolFeature: "The original about page had a timeline that listed significant points in time for the Shimberg Center. I thought the timeline was a cool idea, so I gave it a major refresh: I added some color, I cleaned up the look of it, and it's now responsive on all screen sizes (try viewing it on different screen sizes, the whole layout of it changes!).",
-    //     date: 'August 2018'
-    // },
+    'shimberg': {
+        title: 'Shimberg Center',
+        style: {
+            color: '#ffffff',
+            backgroundColor: '#023366'
+        },
+        logo: 'cards/shimberg.png',
+        demoURL: 'http://shimberg.ufl.edu/',
+        infoURLName: 'shimberg',
+        githubURL: 'N/A',
+        techList: ["node", "webpack", "express", "es6", "babel", "jquery", "bootstrap"],
+        screenshot: 'screenshots/shimberg.png',
+        description: "The Shimberg Center website provides info about the Shimberg center as well as Florida housing data they have created and gathered. This is the 3rd project I delivered for the Shimberg Center.",
+        why: "The site was in dire need of an update: I removed unnecessary files and redundancy from the codebase, I made the site fully responsive on all screen sizes, I standardized the routing, and I added minification, bundling, and compression to speed up the page load times.",
+        coolFeature: "The original About Page had a timeline that listed significant points in time for the Shimberg Center. I thought the timeline was a cool idea, so I gave it a major refresh: I added some color, I cleaned up the UI, and it's now responsive on all screen sizes (try viewing it on different screen sizes, the whole layout of it changes!).",
+        date: 'July 2019'
+    },
     'quickcopy': {
         title: 'Quick Copy',
         style: {
