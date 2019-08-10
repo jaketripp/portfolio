@@ -20,7 +20,7 @@ const apps = {
         title: 'Color Grid',
         style: {
             color: '#ffffff',
-            backgroundColor: '#2979ff'
+            backgroundColor: '#eeba3f'
         },
         logo: 'cards/colorgrid.png',
         demoURL: 'https://jaketripp.github.io/color-grid/',
