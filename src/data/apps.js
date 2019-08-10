@@ -169,23 +169,6 @@ const apps = {
         coolFeature: "This was one of my first Node.js apps where I did almost everything entirely on my own, which was a big milestone for me. I also chose to use EJS templating, which really helped cut the time for development.",
         date: "October 2017"
     },
-    'countdownchamp': {
-        title: 'Countdown Champ',
-        style: {
-            color: '#ffffff',
-            backgroundColor: '#476D36'
-        },
-        logo: 'cards/clock.jpg',
-        demoURL: 'https://jaketripp.github.io/countdown-champ/',
-        infoURLName: 'countdownchamp',
-        githubURL: 'https://github.com/jaketripp/countdown-champ',
-        techList: ['react', 'node', 'webpack', 'es6', 'babel', 'css-3', 'bootstrap'],
-        screenshot: 'screenshots/countdownchamp.png',
-        description: "Type in a date and Countdown Champ will tell you the time until.",
-        why: "I built this app while following David Katz's Udemy course. I actually built a very similar, simple countdown app for my brother who was getting married, but this is a definite step up.",
-        coolFeature: "By using a combination of React with JavaScript's setInterval function, the app counts down the seconds and updates seamlessly when you enter a new date.",
-        date: "January 2018"
-    },
     'chat': {
         title: 'Chat',
         style: {
@@ -202,23 +185,6 @@ const apps = {
         why: "I built this app while following Andrew Mead's Udemy course on Node.js.",
         coolFeature: "I added the feature of being able to see a list of currently open chatrooms. This was also my first project using web sockets with Socket.IO.",
         date: "November 2017"
-    },
-    'simon': {
-        title: 'Simon Game',
-        style: {
-            color: '#FFFFFF',
-            backgroundColor: '#DB2828'
-        },
-        logo: 'cards/simon.png',
-        demoURL: 'https://jaketripp.github.io/simon/',
-        infoURLName: 'simon',
-        githubURL: 'https://github.com/jaketripp/simon/',
-        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
-        screenshot: 'screenshots/simon.png',
-        description: "Just like the old Simon game from your childhood. Get through round 20 for a nostalgic sound effect.",
-        why: "This was the last project from freeCodeCamp's Advanced Front End Development Projects. I remember playing this game as a kid, and it seemed like a good challenge.",
-        coolFeature: "I picked a really simple layout, I found soothing sound effects instead of monotonous beep sounds, and I put a subtle CSS animation on the tile that is active. I also had to get more familiar with HTML audio elements to get the behavior I wanted.",
-        date: "August 2017"
     },
     'yelpcamp': {
         title: 'YelpCamp',
@@ -304,40 +270,6 @@ const apps = {
         why: "I was learning about how colors are represented on the web using hexadecimal numbers or RGB. I figured there was a way to convert, and I was right. I thought making a converter would be a good challenge and help me train myself to be able to see a hexadecimal number and roughly guess the color.",
         coolFeature: "I added a lot of little things that make the user experience more enjoyable: the inputs only allow valid characters, the inputs auto tab, it has a CSS animation on the background so you can watch as the colors change, etc.",
         date: "January 2018"
-    },
-    'piglatinconverter': {
-        title: 'Pig Latin Converter',
-        style: {
-            color: '#ffffff',
-            backgroundColor: '#f0a890'
-        },
-        logo: 'cards/pig.jpg',
-        demoURL: 'https://jaketripp.github.io/PigLatinConverter/',
-        infoURLName: 'piglatinconverter',
-        githubURL: 'https://github.com/jaketripp/PigLatinConverter',
-        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
-        screenshot: 'screenshots/piglatinconverter.png',
-        description: "Convert from English to Pig Latin and back!",
-        why: "I remember speaking in Pig Latin to my friends as a kid. I was learning about Regular Expressions and I wanted to see if I could use my new found knowledge to create a converter. I really could have used it with my friends as a kid to speed up our conversations!",
-        coolFeature: "Pig Latin has an ambiguity. Both 'wart' and 'art' translated into Pig Latin are 'art-way' - meaning if a human saw the Pig Latin word 'art-way,' the only way to decide whether it's 'wart' or 'art' is context. To combat this problem, when converting from Pig Latin back to English, I created a great solution: I add an asterix. If there is a *, it either means the word may have a 'w' at the beginning or it may just start with a vowel. I think it's easier to disregard the asterix from words that just start with a vowel than to intuitively know to add a 'w' to words that originally had one.",
-        date: "June 2017"
-    },
-    'wikiviewer': {
-        title: 'Wiki Viewer',
-        style: {
-            color: '#ffffff',
-            backgroundColor: '#f07818'
-        },
-        logo: 'cards/wikiviewer.png',
-        demoURL: 'https://jaketripp.github.io/wikiviewer/',
-        infoURLName: 'wikiviewer',
-        githubURL: 'https://github.com/jaketripp/wikiviewer/',
-        techList: ['html-5', 'css-3', 'javascript', 'semantic-ui', 'jquery'],
-        screenshot: 'screenshots/wikiviewer.png',
-        description: "Browse for Wikipedia articles.",
-        why: "This was a project from freeCodeCamp's Intermediate Front End Development Projects. I also needed more practice with working with APIs.",
-        coolFeature: "This was one of my first projects working with CSS Flexbox, and I'm happy with how the layout turned out. For a surprise, try leaving the search bar blank!",
-        date: "September 2017"
     },
     'kokolunchbox': {
         title: 'Koko Lunchbox',
