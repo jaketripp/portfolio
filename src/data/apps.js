@@ -26,11 +26,11 @@ const apps = {
         demoURL: 'https://jaketripp.github.io/color-grid/',
         infoURLName: 'colorgrid',
         githubURL: 'https://github.com/jaketripp/color-grid',
-        techList: [],
+        techList: ['react', 'node', 'webpack', 'babel', 'es6', 'sass', 'javascript', 'css-3', 'html-5'],
         screenshot: 'screenshots/colorgrid.png',
-        description: "",
-        why: "",
-        coolFeature: "",
+        description: "Create a matrix of colors by choosing four colors and then splitting up the distance between them.",
+        why: "One day I had a realization: if colors can be represented as numbers, then the color between two colors is just the average of the two colors. I thought a cool way to visualize this would be to split the distance between colors using a slider. Taking this realization further, I then decided to make a color matrix using four colors. As you split the distance into more and more colors, it starts to look like a color gradient - conceptually, this is like an integral taken between two colors.",
+        coolFeature: "I think this is some of my best design work - sleek and visually pleasing. Another cool thing is, instead of having four separate color pickers, I have one color picker that controls the color that you tap - less bloat in the code and conceptually kind of cool to think about.",
         date: 'July 2019'
     },
     'quickcopy': {
