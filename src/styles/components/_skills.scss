@@ -18,4 +18,15 @@
             line-height: 1.6;
         }
     }
+    ul {
+        margin: 8px 0;
+    }
+    li {
+        font-size: 1.8rem;
+        line-height: 1.4;
+        @media (min-width: 700px) {
+            font-size: 2.6rem;
+            line-height: 1.6;
+        }
+    }
 }
