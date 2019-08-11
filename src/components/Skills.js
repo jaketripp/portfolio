@@ -5,7 +5,7 @@ export const Skills = () => (
         <div className="content-container">
             <h3>skills</h3>
             <div className="skills__content">
-                <p><strong>Languages</strong></p>
+                <p><strong>Languages:</strong></p>
                 <ul>
                     <li><strong>I've worked with: </strong>JavaScript, Swift, Apex, Python</li>
                     <li><strong>I <em>want</em> to work with: </strong>JavaScript, Haskell, Python</li>
