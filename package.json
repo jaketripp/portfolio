@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "express": "^4.17.1",
     "node-sass": "^4.12.0",
     "normalize.css": "^8.0.1",
     "radium": "^0.26.0",
@@ -34,5 +35,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "compression": "^1.7.4"
   }
 }
