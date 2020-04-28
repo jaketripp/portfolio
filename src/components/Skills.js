@@ -6,21 +6,10 @@ export const Skills = () => (
 			<h3>skills</h3>
 			<div className="skills__content">
 				<p>
-					<strong>Languages:</strong>
+					<strong>Languages:</strong> JavaScript, Swift, Scala, Python
 				</p>
-				<ul>
-					<li>
-						<strong>I've worked with: </strong>JavaScript, Swift, Apex, Python
-					</li>
-					<li>
-						<strong>
-							I <em>want</em> to work with:{" "}
-						</strong>
-						JavaScript, Haskell, Python
-					</li>
-				</ul>
 				<p>
-					<strong>Libraries &amp; Frameworks:</strong> React, Node.js, Express, Webpack,
+					<strong>Libraries &amp; Frameworks:</strong> React, Node.js, Spark, Express, Webpack,
 					Babel, SCSS
 				</p>
 				<p>
