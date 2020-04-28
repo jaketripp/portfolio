@@ -13,7 +13,7 @@ export const Skills = () => (
 					Babel, SCSS
 				</p>
 				<p>
-					<strong>Databases:</strong> MongoDB, Firebase, SOQL
+					<strong>Databases:</strong> SQL, MongoDB, Firebase
 				</p>
 			</div>
 		</div>
