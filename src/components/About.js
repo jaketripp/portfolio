@@ -24,8 +24,7 @@ const About = () => (
           guitar, reading, or cooking.
         </p>
         <p>
-          I work as a software engineer at <strong>Amazon</strong> in
-          Bellevue, Washington on the Modeling & Optimization team.
+          I work remotely as a software engineer at <strong>Amazon</strong> on the Modeling & Optimization team.
         </p>
       </div>
     </div>

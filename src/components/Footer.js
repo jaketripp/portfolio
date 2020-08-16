@@ -19,7 +19,7 @@ const Footer = () => (
 						<FaGithub />
 					</a>
 					<a
-						href="https://www.linkedin.com/in/jake-tripp/"
+						href="https://www.linkedin.com/in/jaketripp/"
 						aria-label="LinkedIn link"
 						title="LinkedIn"
 					>

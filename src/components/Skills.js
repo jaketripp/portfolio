@@ -15,6 +15,9 @@ export const Skills = () => (
 				<p>
 					<strong>Databases:</strong> SQL, MongoDB, Firebase
 				</p>
+				<p>
+					<strong>AWS:</strong> S3, Glue, Lambda
+				</p>
 			</div>
 		</div>
 	</div>
