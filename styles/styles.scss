@@ -1,0 +1,44 @@
+@import './settings';
+@import './base';
+@import './components/nav';
+@import './components/content-container';
+@import './components/footer';
+@import './components/bio';
+@import './components/card';
+@import './components/app-info';
+@import './components/tech-icon';
+@import './components/about';
+@import './components/skills';
+@import './components/not-found-page';
+@import './components/nextOrPrev';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $dark-grey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $m-size;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
