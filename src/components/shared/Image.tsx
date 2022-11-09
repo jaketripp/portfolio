@@ -24,7 +24,13 @@ export interface IStaticImageProps {
 
 const StaticImage = (src: StaticImageData) => {
   const curried: React.FC<IStaticImageProps> = ({title}) => (
-    <Image src={src} alt={`${title} screenshot`} priority quality={100} />
+    <Image
+      src={src}
+      alt={`${title} screenshot`}
+      priority
+      quality={100}
+      placeholder="blur"
+    />
   )
   return curried
 }

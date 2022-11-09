@@ -50,7 +50,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
       onMouseLeave={restoreBlock}
     >
       <Image
-        src={`/images/${app.logo}`}
+        src={`/images/cards/${app.logo}`}
         alt={`${app.title} app`}
         className="image"
         width={0}
@@ -59,6 +59,8 @@ const Card: React.FC<ICardProps> = ({appName}) => {
         // yet the tiny pictures look terrible, so force using the largest size
         sizes="100vw"
         quality={100}
+        placeholder="blur"
+        blurDataURL={`/images/cards/tiny/${app.logo}.b64`}
       />
 
       <div
