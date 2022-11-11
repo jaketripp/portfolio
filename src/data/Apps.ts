@@ -1,17 +1,41 @@
+import asoftodayLogo from 'images/cards/asoftoday.jpg'
+import calculatorLogo from 'images/cards/calculator.png'
+import chatLogo from 'images/cards/chat.jpg'
+import clearinghouseLogo from 'images/cards/clearinghouse.png'
+import colorconversionLogo from 'images/cards/color.jpg'
+import colorGridLogo from 'images/cards/colorgrid.png'
+import distillrLogo from 'images/cards/distillr.png'
+import elderdataLogo from 'images/cards/elderdata.jpg'
+import expensifyLogo from 'images/cards/expensify.jpg'
+import hairbyfranciscoLogo from 'images/cards/hairbyfrancisco.png'
+import kokolunchboxLogo from 'images/cards/kokolunchbox.png'
+import musicmasterLogo from 'images/cards/musicmaster.jpg'
+import quickcopyLogo from 'images/cards/quickcopy.png'
+import saccLogo from 'images/cards/sacc.jpg'
+import seasonalLogo from 'images/cards/seasonal.jpg'
+import shimbergLogo from 'images/cards/shimberg.png'
+import tictactoeLogo from 'images/cards/tictactoe.png'
+import yelpcampLogo from 'images/cards/yelpcamp.jpg'
+import asoftodayScreenshot from 'images/screenshots/asoftoday.png'
+import calculatorScreenshot from 'images/screenshots/calculator.png'
+import chatScreenshot from 'images/screenshots/chat.png'
+import clearinghouseScreenshot from 'images/screenshots/clearinghouse.png'
+import colorconversionScreenshot from 'images/screenshots/colorconversion.png'
+import colorGridScreenshot from 'images/screenshots/colorgrid.png'
+import distillrScreenshot from 'images/screenshots/distillr.png'
+import elderdataScreenshot from 'images/screenshots/elderdata.png'
+import expensifyScreenshot from 'images/screenshots/expensify.jpg'
+import hairbyfranciscoScreenshot from 'images/screenshots/hairbyfrancisco.jpg'
+import kokolunchboxScreenshot from 'images/screenshots/kokolunchbox.png'
+import musicmasterScreenshot from 'images/screenshots/musicmaster.png'
+import quickcopyScreenshot from 'images/screenshots/quickcopy.png'
+import saccScreenshot from 'images/screenshots/sacc.png'
+import seasonalScreenshot from 'images/screenshots/seasonal.png'
+import shimbergScreenshot from 'images/screenshots/shimberg.png'
+import tictactoeScreenshot from 'images/screenshots/tictactoe.png'
+import yelpcampScreenshot from 'images/screenshots/yelpcamp.png'
+import {StaticImageData} from 'next/image'
 import {TechName} from './Tech'
-import dynamic from 'next/dynamic'
-import {IStaticImageProps} from 'src/components/shared/Image'
-
-const lazyImport = (
-  exportName: keyof typeof import('src/components/shared/Image')
-) => {
-  return dynamic(() =>
-    import('src/components/shared/Image').then(mod => mod[exportName])
-  )
-}
-
-const exampleLazyImport = lazyImport('AsOfToday')
-type TLazyImport = typeof exampleLazyImport
 
 export interface AppDetails {
   title: string
@@ -19,15 +43,15 @@ export interface AppDetails {
     color: string
     backgroundColor: string
   }
-  logo: string
+  logo: StaticImageData
   demoUrl: string
   githubUrl: string | null
-  technologies: TechName[]
-  screenshot: TLazyImport
+  screenshot: StaticImageData
   description: string
   why: string
   coolFeature: string
   dateCompleted: string
+  technologies: TechName[]
 }
 
 export const appNames = [
@@ -60,7 +84,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#EEBA3F',
     },
-    logo: 'cards/colorgrid.png',
     demoUrl: 'https://jaketripp.github.io/color-grid/',
     githubUrl: 'https://github.com/jaketripp/color-grid',
     technologies: [
@@ -74,7 +97,8 @@ const Apps: Record<AppName, AppDetails> = {
       'css_3',
       'html_5',
     ],
-    screenshot: lazyImport('ColorGrid'),
+    logo: colorGridLogo,
+    screenshot: colorGridScreenshot,
     description:
       'Create a matrix of colors by choosing four colors and then splitting up the distance between them.',
     why: 'One day I had a realization: if colors can be represented as numbers, then the color between two colors is just the average of the two colors. I thought a cool way to visualize this would be to split the distance between colors using a slider. Taking this realization further, I then decided to make a color matrix using four colors. As you split the distance into more and more colors, it starts to look like a color gradient - conceptually, this is like an integral taken between two colors.',
@@ -88,7 +112,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#2979FF',
     },
-    logo: 'cards/quickcopy.png',
     demoUrl: 'https://jaketripp.github.io/quick-copy/',
     githubUrl: 'https://github.com/jaketripp/quick-copy',
     technologies: [
@@ -103,7 +126,8 @@ const Apps: Record<AppName, AppDetails> = {
       'css_3',
       'html_5',
     ],
-    screenshot: lazyImport('QuickCopy'),
+    logo: quickcopyLogo,
+    screenshot: quickcopyScreenshot,
     description:
       'Ever have to copy a lot of lines individually to other places? Ever think you pressed CMD+C to find out you, in fact, did not? Ever lose your place and forget what you just copied? Cut out half the work with Quick Copy. Paste in a blob of text and it creates blocks that copy their content to your clipboard when clicked and then disappear!',
     why: 'I had run into the annoying scenario too many times where I had to copy and paste a lot of hard-to-distinguish things (think serial numbers, long URLs, etc) and thought that there had to be a better way.',
@@ -117,7 +141,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#023366',
     },
-    logo: 'cards/shimberg.png',
     demoUrl: 'http://shimberg.ufl.edu/',
     githubUrl: null,
     technologies: [
@@ -129,7 +152,8 @@ const Apps: Record<AppName, AppDetails> = {
       'jquery',
       'bootstrap',
     ],
-    screenshot: lazyImport('Shimberg'),
+    logo: shimbergLogo,
+    screenshot: shimbergScreenshot,
     description:
       'The Shimberg Center website provides info about the Shimberg center as well as Florida housing data they have created and gathered. This is the 3rd project I delivered for the Shimberg Center.',
     why: 'The site was in dire need of an update: I removed unnecessary files and redundancy from the codebase, I made the site fully responsive on all screen sizes, I standardized the routing, and I added minification, bundling, and compression to speed up the page load times.',
@@ -143,7 +167,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#105F84',
     },
-    logo: 'cards/clearinghouse.png',
     demoUrl: 'http://flhousingdata.shimberg.ufl.edu/',
     githubUrl: null,
     technologies: [
@@ -158,7 +181,8 @@ const Apps: Record<AppName, AppDetails> = {
       'chai',
       'selenium',
     ],
-    screenshot: lazyImport('Clearinghouse'),
+    logo: clearinghouseLogo,
+    screenshot: clearinghouseScreenshot,
     description:
       "Florida Housing Data Clearinghouse, the 2nd web app I delivered for the Shimberg Center, provides considerable data on Florida's housing.",
     why: 'The site needed new features and a new infrastructure to support them. I removed unnecessary features, added new features, and improved the user experience and interface.',
@@ -172,7 +196,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#45A3CF',
     },
-    logo: 'cards/elderdata.jpg',
     demoUrl: 'http://elderdata.shimberg.ufl.edu/',
     githubUrl: null,
     technologies: [
@@ -187,7 +210,8 @@ const Apps: Record<AppName, AppDetails> = {
       'chai',
       'selenium',
     ],
-    screenshot: lazyImport('Elderdata'),
+    logo: elderdataLogo,
+    screenshot: elderdataScreenshot,
     description:
       'Housing Florida’s Older Adults: By the Numbers (referred to as Elder Data by my team and I) is the 1st web app I worked on with the Shimberg Center. The app provides data on housing the elderly in Florida.',
     why: 'We remade the existing site (most of which was written in Perl). Since we were such a small team, I was the lead developer - which was a really cool experience.',
@@ -201,7 +225,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#8FCE47',
     },
-    logo: 'cards/distillr.png',
     demoUrl: 'http://jaketripp-distillr.herokuapp.com/',
     githubUrl: 'https://github.com/jaketripp/via',
     technologies: [
@@ -213,7 +236,8 @@ const Apps: Record<AppName, AppDetails> = {
       'babel',
       'momentjs',
     ],
-    screenshot: lazyImport('Distillr'),
+    logo: distillrLogo,
+    screenshot: distillrScreenshot,
     description:
       "Distillr helps you get where you want using a VIA bus. It takes in some info like your current address (or any address in San Antonio), the amount of money you are willing to spend, start and end times, and a search word. It then returns a list of options of places you could go, with their Yelp ratings, expected cost, estimated time, listed phone numbers, and most importantly a dynamic bus route that will take you to VIA's web app with all of the necessary info already populated.",
     why: 'My friend and teammate, Kia, told me about the VIA 2018 Codeathon and it sounded like a great opportunity to participate in. We had been wanting to work together because we thought our skillsets would compliment each other. It also sounded more satisfying and convenient because the problems were local problems. It’s 2018, we make more decisions every single day than arguably any other time in history. Decisions are hard, and time is precious.  Distillr makes decision making easy.',
@@ -227,7 +251,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#2C5B61',
     },
-    logo: 'cards/music-master.jpg',
     demoUrl: 'https://jaketripp-music-master.herokuapp.com/',
     githubUrl: 'https://github.com/jaketripp/music-master',
     technologies: [
@@ -241,7 +264,8 @@ const Apps: Record<AppName, AppDetails> = {
       'sass',
       'bootstrap',
     ],
-    screenshot: lazyImport('Musicmaster'),
+    logo: musicmasterLogo,
+    screenshot: musicmasterScreenshot,
     description:
       'Sign in with your Spotify account to play popular songs by your favorite artists.',
     why: "I was initially building a more simple version of this app while following David Katz's Udemy course. I love music and I am a Spotify user and it seemed like a good project to learn more about React.",
@@ -255,7 +279,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#1890C0',
     },
-    logo: 'cards/expensify.jpg',
     demoUrl: 'https://jaketripp-expensify.herokuapp.com/',
     githubUrl: 'https://github.com/jaketripp/expensify',
     technologies: [
@@ -271,7 +294,8 @@ const Apps: Record<AppName, AppDetails> = {
       'babel',
       'sass',
     ],
-    screenshot: lazyImport('Expensify'),
+    logo: expensifyLogo,
+    screenshot: expensifyScreenshot,
     description:
       'Keep track of your expenses with this powerful and intuitive app!',
     why: "I made the bulk of this app as the capstone project of Andrew Mead's Udemy course. It used all of the things we learned in the course, and then I added some features of my own.",
@@ -285,11 +309,11 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#7D5DB2',
     },
-    logo: 'cards/hf.png',
     demoUrl: 'https://jaketripp.github.io/hairByFrancisco/',
     githubUrl: 'https://github.com/jaketripp/hairByFrancisco/',
     technologies: ['html_5', 'css_3', 'javascript', 'semantic_ui', 'jquery'],
-    screenshot: lazyImport('HairByFrancisco'),
+    logo: hairbyfranciscoLogo,
+    screenshot: hairbyfranciscoScreenshot,
     description:
       'Francisco Mejia is a passionate, local hairstylist. Clients of Francisco love his creative vision, his ability to give people the perfect haircut/style/color, his attention to detail, and his friendly personality.',
     why: "Francisco is my barber and his website didn't show off his skills very well. I also wanted to add real work to my résumé.",
@@ -303,7 +327,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#184860',
     },
-    logo: 'cards/asoftoday.jpg',
     demoUrl: 'https://jaketripp.github.io/asoftoday/',
     githubUrl: 'https://github.com/jaketripp/asoftoday',
     technologies: [
@@ -314,7 +337,8 @@ const Apps: Record<AppName, AppDetails> = {
       'jquery',
       'modernizr',
     ],
-    screenshot: lazyImport('AsOfToday'),
+    logo: asoftodayLogo,
+    screenshot: asoftodayScreenshot,
     description:
       'As of Today provides a helpful way to track the statistics of a life after habitual addiction.',
     why: "My mom was addicted to Diet Coke for most of her adult life. She tried multiple times to quit - all unsuccessful. She usually drank six Diet Cokes a day. Partly with the help of As of Today, she successfully quit on February 23, 2017. That's a lot of Diet Cokes! Now, she has lower cholesterol and blood pressure, healthier body weight and dental hygiene, more balanced emotional health, and less pain. I want that for everyone.",
@@ -328,7 +352,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#181818',
     },
-    logo: 'cards/sacc.jpg',
     demoUrl: 'http://sacodingchallenge.com',
     githubUrl: 'https://github.com/sacodingchallenge/sacodingchallenge',
     technologies: [
@@ -341,7 +364,8 @@ const Apps: Record<AppName, AppDetails> = {
       'bootstrap',
       'jquery',
     ],
-    screenshot: lazyImport('SACC'),
+    logo: saccLogo,
+    screenshot: saccScreenshot,
     description:
       'The San Antonio Coding Challenge is a meetup group that holds a monthly coding competition in San Antonio.',
     why: 'Gene Carangal, the founder of the meetup, is a really great guy and I really enjoy attending this meetup. Gene noticed that I was looking for work to boost my résumé, and the website needed a lot of work, and the rest is history.',
@@ -355,7 +379,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#276B82',
     },
-    logo: 'cards/chat.jpg',
     demoUrl: 'http://jaketripp-chat-app.herokuapp.com/',
     githubUrl: 'https://github.com/jaketripp/node-chat-app',
     technologies: [
@@ -369,7 +392,8 @@ const Apps: Record<AppName, AppDetails> = {
       'bootstrap',
       'jquery',
     ],
-    screenshot: lazyImport('Chat'),
+    logo: chatLogo,
+    screenshot: chatScreenshot,
     description:
       'Pick a username, pick a chatroom from a list (or create your own), and tell your friends to join!',
     why: "I built this app while following Andrew Mead's Udemy course on Node.js.",
@@ -383,7 +407,6 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#265A88',
     },
-    logo: 'cards/yelpcamp.jpg',
     demoUrl: 'https://jaketripp-yelp-camp.herokuapp.com/',
     githubUrl: 'https://github.com/jaketripp/yelpcamp',
     technologies: [
@@ -396,7 +419,8 @@ const Apps: Record<AppName, AppDetails> = {
       'javascript',
       'bootstrap',
     ],
-    screenshot: lazyImport('YelpCamp'),
+    logo: yelpcampLogo,
+    screenshot: yelpcampScreenshot,
     description:
       'View hand-picked campgrounds from all over the world! Sign up to add your own campgrounds or leave comments on other campgrounds.',
     why: "I built this app while following Colt Steele's Web Dev Bootcamp Udemy course. This was the final and most complex project of the course.",
@@ -410,11 +434,11 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#1890D8',
     },
-    logo: 'cards/calculator.png',
     demoUrl: 'https://jaketripp.github.io/calculator/',
     githubUrl: 'https://github.com/jaketripp/calculator/',
     technologies: ['html_5', 'css_3', 'javascript', 'semantic_ui', 'jquery'],
-    screenshot: lazyImport('Calculator'),
+    logo: calculatorLogo,
+    screenshot: calculatorScreenshot,
     description: 'Four function calculator.',
     why: "This was a project from freeCodeCamp's Advanced Front End Development Projects. I'm a huge math geek, and it seemed like a great introductory challenge for getting accustomed to working with state.",
     coolFeature:
@@ -427,11 +451,11 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#D4493D',
     },
-    logo: 'cards/seasonal.jpg',
     demoUrl: 'https://jaketripp.github.io/Seasonal',
     githubUrl: 'https://github.com/jaketripp/Seasonal',
     technologies: ['html_5', 'css_3', 'javascript', 'bootstrap', 'jquery'],
-    screenshot: lazyImport('Seasonal'),
+    logo: seasonalLogo,
+    screenshot: seasonalScreenshot,
     description:
       'A comprehensive tool to aid with picking out fresh fruit. Seasonal is one of my very first projects, and it was the first project where I used Git and GitHub. I researched all of the information myself. ',
     why: 'I was really fed up with two things: 1) going to the grocery store and only picking the fruit I was familiar with and 2) not knowing whether fruit was ripe or not.',
@@ -445,11 +469,11 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#00A717',
     },
-    logo: 'cards/tictactoe.png',
     demoUrl: 'https://jaketripp.github.io/tictactoe/',
     githubUrl: 'https://github.com/jaketripp/tictactoe/',
     technologies: ['html_5', 'css_3', 'javascript', 'semantic_ui', 'jquery'],
-    screenshot: lazyImport('TicTacToe'),
+    logo: tictactoeLogo,
+    screenshot: tictactoeScreenshot,
     description: 'Play Tic Tac Toe against a formidable opponent.',
     why: "This was a project from freeCodeCamp's Advanced Front End Development Projects. Tic tac toe is a simple game, and so I wanted to see if writing a bot was equally simple. It was not.",
     coolFeature:
@@ -462,11 +486,11 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#A81890',
     },
-    logo: 'cards/color.jpg',
     demoUrl: 'https://jaketripp.github.io/Color-Conversion/',
     githubUrl: 'https://github.com/jaketripp/Color-Conversion/',
     technologies: ['html_5', 'css_3', 'javascript', 'semantic_ui', 'jquery'],
-    screenshot: lazyImport('ColorConversion'),
+    logo: colorconversionLogo,
+    screenshot: colorconversionScreenshot,
     description: 'Convert hexadecimal to RGB and see live color changes.',
     why: 'I was learning about how colors are represented on the web using hexadecimal numbers or RGB. I figured there was a way to convert, and I was right. I thought making a converter would be a good challenge and help me train myself to be able to see a hexadecimal number and roughly guess the color.',
     coolFeature:
@@ -479,11 +503,11 @@ const Apps: Record<AppName, AppDetails> = {
       color: '#FFFFFF',
       backgroundColor: '#C00030',
     },
-    logo: 'cards/koko.png',
     demoUrl: 'https://jaketripp.github.io/Koko-Lunchbox/',
     githubUrl: 'https://github.com/jaketripp/Koko-Lunchbox',
     technologies: ['html_5', 'css_3', 'javascript', 'bootstrap', 'jquery'],
-    screenshot: lazyImport('KokoLunchbox'),
+    logo: kokolunchboxLogo,
+    screenshot: kokolunchboxScreenshot,
     description:
       'Koko Lunchbox in Provo, Utah delivers a fresh, fast and clean approach to Korean cuisine.',
     why: "I used to work for Koko Lunchbox when my close friend was the owner/chef/manager. I love eating Korean food and wanted to learn how to cook it. I moved away and was learning web developement on the side, and wanted to make my friend a website and surprise her with it, but she told me she had sold the restaurant and it was under new management. Unfortunately, the site never went live and remained just a personal project, but I'm still quite proud of it and the talent I gained in cooking Korean cuisine.",

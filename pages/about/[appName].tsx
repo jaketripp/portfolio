@@ -65,7 +65,13 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
         <h1 style={{color: backgroundColor}}>{appDetails.title}</h1>
         <div className="content">
           <div className="screenshot">
-            <appDetails.screenshot title={appDetails.title} />
+            <Image
+              src={appDetails.screenshot}
+              alt={`${appDetails.title} screenshot`}
+              priority
+              quality={100}
+              placeholder="blur"
+            />
             <a href={appDetails.demoUrl}>
               <div className="gradient" />
             </a>
