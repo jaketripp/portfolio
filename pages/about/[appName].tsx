@@ -60,7 +60,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
     },
   }
   return (
-    <div className="app-info">
+    <div key={appDetails.title} className="app-info">
       <div className="content-container">
         <h1 style={{color: backgroundColor}}>{appDetails.title}</h1>
         <div className="content">
