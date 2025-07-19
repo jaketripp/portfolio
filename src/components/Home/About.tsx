@@ -18,16 +18,16 @@ const About: React.FC = () => (
           music, cooking, or going for a walk.
         </p>
         <p>
-          I live in Seattle and work remotely at{' '}
+          I live in Denver and work remotely at{' '}
           <a href="https://mercury.com/" target="_blank">
             Mercury
           </a>
           , which was recently ranked as the{' '}
           <a
-            href="https://www.greatplacetowork.com/best-workplaces/technology/2022?category=small-and-medium"
+            href="https://www.greatplacetowork.com/best-workplaces/technology/2024?category=small-and-medium"
             target="_blank"
           >
-            #18 best place to work in Technology (small and medium sized
+            #6 best place to work in Technology (small and medium sized
             companies)
           </a>
           .
