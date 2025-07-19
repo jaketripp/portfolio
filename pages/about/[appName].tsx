@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
-import {AppName, appNames, Apps} from 'src/data/Apps'
+import {AppName, appNames, Apps} from '@/data/Apps'
 import hexRgb from 'hex-rgb'
-import {Tech} from 'src/data/Tech'
+import {Tech} from '@/data/Tech'
 
 export const getServerSideProps: GetServerSideProps<
   IAppInfoPageProps
@@ -80,7 +80,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
             <div className="buttons">
               <a
                 className="card__links__button"
-                css={btnStyle}
+                style={btnStyle}
                 href={appDetails.demoUrl}
               >
                 Demo
@@ -88,7 +88,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
               {appDetails.githubUrl && (
                 <a
                   className="card__links__button"
-                  css={btnStyle}
+                  style={btnStyle}
                   href={appDetails.githubUrl}
                 >
                   GitHub

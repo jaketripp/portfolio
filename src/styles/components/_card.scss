@@ -1,7 +1,11 @@
+@use "sass:math";
+
 @mixin flex-wrap-fix($flex-basis, $max-viewport-width: 2000px) {
-  flex-grow: 1;
-  flex-basis: $flex-basis;
-  max-width: 100%;
+  & {
+    flex-grow: 1;
+    flex-basis: $flex-basis;
+    max-width: 100%;
+  }
 
   $multiplier: 1;
   $current-width: 0px;
@@ -10,11 +14,12 @@
     $current-width: $current-width + $flex-basis;
     $multiplier: $multiplier + 1;
 
-    @media (min-width: $flex-basis * $multiplier) {
-      max-width: percentage(1 / $multiplier);
+    @media (min-width: #{ $flex-basis * $multiplier }) {
+      max-width: math.percentage(math.div(1, $multiplier));
     }
   }
 }
+
 
 .card-list {
   width: 100%;
@@ -26,12 +31,17 @@
 
 .card,
 .card .image {
-  cursor: pointer;
+  & {
+    cursor: pointer;
+    position: relative;
+  }
+
   @include flex-wrap-fix(300px);
-  position: relative;
+
   &:hover .overlay {
     opacity: 1;
   }
+
   @media (min-width: 800px) {
     @include flex-wrap-fix(400px);
   }
@@ -57,16 +67,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   h3 {
     font-size: 36px;
     margin: 0 32px 16px;
     text-align: center;
     line-height: 1;
   }
+
   .text {
     text-align: center;
     display: flex;
     flex-direction: column;
+
     .block {
       position: absolute;
       top: 0;
@@ -87,9 +100,11 @@ a.card__links__button {
   padding: 4px 16px;
   border-radius: 40px;
   text-decoration: none;
+
   &:hover {
     transition: 0.3s ease;
   }
+
   @media (min-width: 800px) {
     padding: 4px 24px;
   }

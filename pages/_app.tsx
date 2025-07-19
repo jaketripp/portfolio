@@ -1,7 +1,7 @@
-import 'styles/styles.scss'
+import '@/styles/styles.scss'
 import type {AppProps} from 'next/app'
-import Nav from 'src/components/shared/Nav'
-import Footer from 'src/components/shared/Footer'
+import Nav from '@/components/shared/Nav'
+import Footer from '@/components/shared/Footer'
 import Head from 'next/head'
 
 function MyApp({Component, pageProps}: AppProps) {

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState} from 'react'
-import {AppName, Apps} from 'src/data/Apps'
+import {AppName, Apps} from '@/data/Apps'
 
 interface ICardProps {
   appName: AppName
@@ -66,7 +66,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
         <h3>{app.title}</h3>
         <div className="text">
           <div className="block" style={blockStyle}></div>
-          <a href={app.demoUrl} className="card__links__button" css={btnStyle}>
+          <a href={app.demoUrl} className="card__links__button" style={btnStyle}>
             Demo
           </a>
 
@@ -74,7 +74,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
             <a
               href={app.githubUrl}
               className="card__links__button"
-              css={btnStyle}
+              style={btnStyle}
               key={app.githubUrl}
             >
               GitHub
@@ -82,7 +82,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
           )}
           <Link
             href={`/about/${appName}`}
-            css={btnStyle}
+            style={btnStyle}
             className="card__links__button"
           >
             More Info

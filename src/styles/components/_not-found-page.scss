@@ -1,3 +1,5 @@
+@use '@/styles/settings';
+
 .not-found-page {
   *,
   *:before,
@@ -15,7 +17,7 @@
   h1 {
     color: white;
     font-size: 14rem;
-    text-shadow: 0.03em 0.03em 0 $green;
+    text-shadow: 0.03em 0.03em 0 settings.$green;
     line-height: 1;
     position: relative a {
       color: white;
@@ -52,7 +54,7 @@
 }
 
 .backdrop {
-  background: $green;
+  background: settings.$green;
   position: absolute;
   top: 0;
   right: 0;

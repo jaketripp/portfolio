@@ -1,5 +1,5 @@
 import React from 'react'
-import {appNames} from 'src/data/Apps'
+import {appNames} from '@/data/Apps'
 import Card from './Card'
 
 const CardList: React.FC = () => (

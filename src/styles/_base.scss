@@ -1,3 +1,5 @@
+@use '@/styles/settings';
+
 * {
   box-sizing: border-box;
 }
@@ -7,9 +9,9 @@ html {
 }
 
 body {
-  color: $dark-grey;
+  color: settings.$dark-grey;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: $m-size;
+  font-size: settings.$m-size;
   line-height: 1.6;
 }
 

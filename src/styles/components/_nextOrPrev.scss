@@ -1,3 +1,5 @@
+@use '@/styles/settings';
+
 .nextOrPrev {
   display: flex;
   justify-content: space-between;
@@ -25,14 +27,14 @@
     justify-content: center;
     padding: 4px 0px;
     border-radius: 40px;
-    color: $green;
-    border: 2px solid $green;
+    color: settings.$green;
+    border: 2px solid settings.$green;
     transition: 0.2s ease;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     &:hover {
       color: white;
-      background: $green;
-      box-shadow: 0px 8px 15px rgba($green, 0.4);
+      background: settings.$green;
+      box-shadow: 0px 8px 15px rgba(settings.$green, 0.4);
     }
     svg {
       font-size: 30px;

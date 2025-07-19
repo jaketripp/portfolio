@@ -1,5 +1,7 @@
+@use '@/styles/settings';
+
 .navbar {
-  background: $blue;
+  background: settings.$blue;
   .navbar__content.content-container-fluid {
     padding: 0 8px;
     display: flex;

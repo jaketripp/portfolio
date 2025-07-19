@@ -1,0 +1,44 @@
+@use '@/styles/settings';
+@use '@/styles/base';
+@use '@/styles/components/nav';
+@use '@/styles/components/content-container';
+@use '@/styles/components/footer';
+@use '@/styles/components/bio';
+@use '@/styles/components/card';
+@use '@/styles/components/app-info';
+@use '@/styles/components/tech-icon';
+@use '@/styles/components/about';
+@use '@/styles/components/skills';
+@use '@/styles/components/not-found-page';
+@use '@/styles/components/nextOrPrev';
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: settings.$dark-grey;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: settings.$m-size;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: 600;
+}
+
+button {
+  cursor: pointer;
+}
