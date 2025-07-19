@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 module.exports = {
   trailingComma: 'es5',
@@ -9,4 +9,4 @@ module.exports = {
   bracketSpacing: false,
   arrowParens: 'avoid',
   printWidth: 80,
-};
+}

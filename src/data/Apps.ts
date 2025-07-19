@@ -75,7 +75,7 @@ export const appNames = [
   'kokolunchbox',
 ] as const
 
-export type AppName = typeof appNames[number]
+export type AppName = (typeof appNames)[number]
 
 const Apps: Record<AppName, AppDetails> = {
   colorgrid: {

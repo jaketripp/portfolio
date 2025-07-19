@@ -6,6 +6,7 @@ import {MdKeyboardArrowLeft, MdKeyboardArrowRight} from 'react-icons/md'
 import {AppName, appNames, Apps} from '@/data/Apps'
 import hexRgb from 'hex-rgb'
 import {Tech} from '@/data/Tech'
+import {css} from '@emotion/react'
 
 export const getServerSideProps: GetServerSideProps<
   IAppInfoPageProps
@@ -44,7 +45,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
   const {prevAppName, nextAppName} = getPrevAndNext(appName)
 
   const {color, backgroundColor} = appDetails.style
-  const btnStyle = {
+  const btnCss = css({
     backgroundColor: color,
     color: backgroundColor,
     border: `2px solid ${backgroundColor}`,
@@ -58,7 +59,8 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
         format: 'css',
       })}`,
     },
-  }
+  })
+
   return (
     <div key={appDetails.title} className="app-info">
       <div className="content-container">
@@ -80,7 +82,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
             <div className="buttons">
               <a
                 className="card__links__button"
-                style={btnStyle}
+                css={btnCss}
                 href={appDetails.demoUrl}
               >
                 Demo
@@ -88,7 +90,7 @@ const AppInfoPage: NextPage<IAppInfoPageProps> = ({appName}) => {
               {appDetails.githubUrl && (
                 <a
                   className="card__links__button"
-                  style={btnStyle}
+                  css={btnCss}
                   href={appDetails.githubUrl}
                 >
                   GitHub

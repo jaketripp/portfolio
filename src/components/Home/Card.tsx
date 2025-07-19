@@ -1,7 +1,8 @@
+import {AppName, Apps} from '@/data/Apps'
+import {css} from '@emotion/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React, {useState} from 'react'
-import {AppName, Apps} from '@/data/Apps'
 
 interface ICardProps {
   appName: AppName
@@ -29,7 +30,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
 
   const {color, backgroundColor} = app.style
 
-  const btnStyle = {
+  const btnCss = css({
     backgroundColor,
     color,
     border: `2px solid ${color}`,
@@ -37,7 +38,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
       backgroundColor: color,
       color: backgroundColor,
     },
-  }
+  })
 
   return (
     <div
@@ -66,7 +67,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
         <h3>{app.title}</h3>
         <div className="text">
           <div className="block" style={blockStyle}></div>
-          <a href={app.demoUrl} className="card__links__button" style={btnStyle}>
+          <a href={app.demoUrl} className="card__links__button" css={btnCss}>
             Demo
           </a>
 
@@ -74,7 +75,7 @@ const Card: React.FC<ICardProps> = ({appName}) => {
             <a
               href={app.githubUrl}
               className="card__links__button"
-              style={btnStyle}
+              css={btnCss}
               key={app.githubUrl}
             >
               GitHub
@@ -82,10 +83,11 @@ const Card: React.FC<ICardProps> = ({appName}) => {
           )}
           <Link
             href={`/about/${appName}`}
-            style={btnStyle}
             className="card__links__button"
+            css={btnCss}
           >
             More Info
+            <span className="sr-only"> about {Apps[appName].title}</span>
           </Link>
         </div>
       </div>

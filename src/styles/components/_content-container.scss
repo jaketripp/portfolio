@@ -1,28 +1,28 @@
 @use '@/styles/settings';
 
 .content-container {
-	margin: 0 auto;
-	padding: 0 settings.$m-size;
-	width: 1000px;
-	max-width: 95%;
-	@media (min-width: 600px) {
-		max-width: 90%;
-	}
+  margin: 0 auto;
+  padding: 0 settings.$m-size;
+  width: 1000px;
+  max-width: 95%;
+  @media (min-width: 600px) {
+    max-width: 90%;
+  }
 }
 
 .content-container-fluid {
-	margin: 0;
-	padding: 0 3.2rem;
-	width: 100%;
+  margin: 0;
+  padding: 0 3.2rem;
+  width: 100%;
 }
 
 .section {
-	width: 100%;
-	padding: 64px 0px;
-	margin: 0px;
+  width: 100%;
+  padding: 64px 0px;
+  margin: 0px;
 }
 
 .section__secondary {
-	background: settings.$blue;
-	color: white;
+  background: settings.$blue;
+  color: white;
 }
