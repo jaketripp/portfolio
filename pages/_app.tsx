@@ -8,11 +8,11 @@ function MyApp({Component, pageProps}: AppProps) {
   return (
     <>
       <Head>
-        <title>Jake Tripp | Full-Stack Developer | Seattle</title>
+        <title>Jake Tripp | Full-Stack Developer | Denver</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Full-stack developer in Seattle with a passion for creating innovative solutions to complex problems."
+          content="Full-stack developer in Denver with a passion for creating innovative solutions to complex problems."
         />
 
         {/* favicons */}
@@ -48,7 +48,7 @@ function MyApp({Component, pageProps}: AppProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Jake Tripp | Full-Stack Developer | Seattle"
+          content="Jake Tripp | Full-Stack Developer | Denver"
         />
         <meta
           property="og:image"
@@ -59,7 +59,7 @@ function MyApp({Component, pageProps}: AppProps) {
         <meta property="og:image:height" content="1200" />
         <meta
           property="og:description"
-          content="Full-stack developer in Seattle with a passion for creating innovative solutions to complex problems."
+          content="Full-stack developer in Denver with a passion for creating innovative solutions to complex problems."
         />
       </Head>
       <Nav />
